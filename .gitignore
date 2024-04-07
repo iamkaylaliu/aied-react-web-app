@@ -1,4 +1,7 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# newly added following webdev A1 instruction
+.idea
+node_modules
 
 # dependencies
 /node_modules
