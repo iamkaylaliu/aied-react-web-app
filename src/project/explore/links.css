@@ -80,15 +80,17 @@
 
 .contact-col-light-blue div {
     width: 70%;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .contact-col-light-blue .quote {
-    font-size: 1.2em;
+    font-size: 1.1em;
     /* Larger font size for the quote */
+    line-height: 1.5;
 }
 
 .contact-col-light-blue .author {
     font-size: 1.1em;
     /* Smaller font size for the book info */
+    line-height: 1.5;
 }
