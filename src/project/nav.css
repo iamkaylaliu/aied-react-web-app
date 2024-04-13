@@ -1,0 +1,72 @@
+.navbar {
+    background-color: #555;
+    /* Grey background color */
+    border: 10px solid #fff;
+    /* White border */
+    padding: 5px 5px;
+    /* Padding around the navigation bar */
+    display: flex;
+    /* Use flexbox layout */
+    justify-content: space-between;
+    /* Align items at the start and end */
+    align-items: center;
+    /* Center items vertically */
+}
+
+.navbar-logo img {
+    height: 80px;
+    /* Adjust logo height as needed */
+    margin: 0;
+    margin-right: 20px;
+    margin-left: 150px;
+}
+
+.navbar-title {
+    display: flex;
+    /* Use flexbox layout */
+    flex-direction: column;
+    /* Arrange items in a column */
+    align-items: left;
+    /* Center items horizontally */
+    margin-right: auto;
+    /* Push title to the left */
+    color: #f2f2f2;
+    /* Light grey font color */
+}
+
+.navbar-title h2 {
+    margin: 0;
+    /* Remove default margin */
+    margin-top: 15px;
+    font-size: 26px;
+    /* Adjust font size as needed */
+    line-height: 1;
+    /* Adjust line height */
+}
+
+.navbar-title h3 {
+    margin-top: 5px;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.navbar-links {
+    display: flex;
+    /* Use flexbox layout */
+    margin-right: 150px;
+}
+
+.navbar-link {
+    margin-left: 40px;
+    /* Add space between links */
+    text-decoration: none;
+    /* Remove underline from links */
+    color: #f2f2f2;
+    /* Light grey font color */
+    /* White font color */
+}
+
+.navbar-link.active {
+    color: #fff;
+    /* Active link color */
+}

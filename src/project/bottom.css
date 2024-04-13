@@ -1,0 +1,44 @@
+.bottom-container {
+    background-color: #555;
+    border: 10px solid #fff;
+    padding: 5px 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+}
+
+.col {
+    padding: 10px;
+    color: #f2f2f2;
+}
+
+.col p {
+    margin: 0;
+    max-width: 400px;
+}
+
+.col:nth-child(1) {
+    flex: 0.5;
+}
+
+.col:nth-child(2) {
+    flex: 2;
+    /* 50% width */
+}
+
+.col:nth-child(3) {
+    flex: 1.5;
+    /* 30% width */
+}
+
+.col:nth-child(4) {
+    flex: 1;
+    /* 20% width */
+}
+
+.bottombar-logo img {
+    height: 80px;
+    /* Adjust logo height as needed */
+    margin: 0;
+    margin-left: 150px;
+}

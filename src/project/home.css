@@ -1,0 +1,64 @@
+.home-container {
+    display: flex;
+    justify-content: space-between;
+    /* Distributes items evenly across the main axis */
+}
+
+.column {
+    flex: 1;
+    /* Each column will take up equal space */
+    margin: 0 5px;
+    /* Adjust margin as needed */
+}
+
+.col-6 {
+    flex: 6;
+    /* Column takes 8/12 of the available space */
+}
+
+.col-3 {
+    flex: 3;
+    /* Column takes 2/12 of the available space */
+}
+
+.full-image {
+    width: 100%;
+    padding: 5px;
+    /* Ensures image takes full width of its container */
+}
+
+.half-image {
+    width: 50%;
+    /* Ensures image takes full width of its container */
+}
+
+.blue-overlay {
+    position: relative;
+    /* Set position to relative */
+    background-color: #033E8C;
+    /* Blue background with some transparency */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 5px;
+    width: 97%;
+    /* Set width to 100% to fill the column */
+    height: 38%;
+    /* Set height to 100% to fill the column */
+}
+
+.white-text {
+    color: white;
+    text-align: center;
+    margin: 10px;
+    font-size: 26px;
+}
+
+.explore-link {
+    color: white;
+    text-decoration: none;
+    margin-top: 10px;
+    font-weight: bold;
+}

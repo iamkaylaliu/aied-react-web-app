@@ -1,41 +1,43 @@
-import Home from "./home";
-
-import Signin from "./users/signin";
-import Signup from "./users/signup";
-import Account from "./users/account";
-import Admin from "./users/admin";
-
+import React from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
 import Nav from "./nav";
-import UserTable from "./users/table";
+import Bottom from "./bottom";
+import Home from "./home";
+import Galleries from "./explore/galleries";
+import Links from "./explore/links";
+import Contributors from "./explore/contributors";
+import Contact from "./explore/contact";
+
+import Exhibit1 from "./exhibit/exhibit1";
 
 function Project() {
     return (
         <div className="container-fluid pt-3">
             <div className="row">
-                <div className="col-2">
+                <div className="col">
                     <Nav />
                 </div>
-                <div className="col-10">
+            </div>
+            <div className="row">
+                <div className="col">
                     <Routes>
-                        <Route path="/account" element={<Account />} />
-                        <Route path="/account/:id" element={<Account />} />
-                        <Route path="/admin" element={<Admin />} />
-                        <Route path="/admin/users" element={<UserTable />} />
                         <Route path="/" element={<Navigate to="/project/home" />} />
                         <Route path="/home" element={<Home />} />
-                        <Route path="/signup" element={<Signup />} />
-                        <Route path="/signin" element={<Signin />} />
-                        {/* <Route path="/courses" element={<CourseList />} />
-              <Route path="/courses/:cid" element={<CourseDetails />} />
-              <Route path="/search" element={<Search />} />
-              <Route path="/search/:search" element={<Search />} />
-              <Route path="/details/:id" element={<Details />} /> */}
+                        <Route path="/galleries" element={<Galleries />} />
+                        <Route path="/links" element={<Links />} />
+                        <Route path="/contributors" element={<Contributors />} />
+                        <Route path="/contact" element={<Contact />} />
+                        <Route path="/exhibit/exhibit1" element={<Exhibit1 />} />
                     </Routes>
                 </div>
             </div>
+            <div className="row">
+                <div className="col">
+                    <Bottom />
+                </div>
+            </div>
         </div>
-
     );
 }
+
 export default Project;

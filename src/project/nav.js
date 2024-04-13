@@ -1,31 +1,43 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
+import logo from "./logo.png";
+import "./nav.css";
+
 function Nav() {
     const { pathname } = useLocation();
     const links = [
-        { to: "/project/home", label: "Home" },
-        // { to: "/project/search", label: "Search" },
-        { to: "/project/signin", label: "Signin" },
-        { to: "/project/signup", label: "Signup" },
-        { to: "/project/account", label: "Account" },
-        { to: "/project/admin", label: "Admin" },
-        // { to: "/project/courses", label: "Courses" },
+        { to: "/project/home", label: "HOME" },
+        { to: "/project/galleries", label: "GALLERIES" },
+        { to: "/project/links", label: "LINKS" },
+        { to: "/project/contributors", label: "CONTRIBUTORS" },
+        { to: "/project/contact", label: "CONTACT" },
     ];
     const active = (path) => (pathname.includes(path) ? "active" : "");
+
     return (
-        <div className="list-group">
-            {links.map((link) => (
-                <Link
-                    key={link.to}
-                    to={link.to}
-                    className={`list-group-item ${active(link.to)}`}
-                >
-                    {link.label}
-                </Link>
-            ))}
-        </div>
+        <nav className="navbar">
+            <div className="navbar-logo">
+                <img src={logo} alt="Logo" />
+            </div>
+            <div className="navbar-title">
+                <h2>UNVEILING GENIUS</h2>
+                <h3>Virtual Physics Museum</h3>
+            </div>
+            <div className="navbar-links">
+                {links.map((link) => (
+                    <Link
+                        key={link.to}
+                        to={link.to}
+                        className={`navbar-link ${active(link.to)}`}
+                    >
+                        {link.label}
+                    </Link>
+                ))}
+            </div>
+        </nav>
     );
 }
 
 export default Nav;
+

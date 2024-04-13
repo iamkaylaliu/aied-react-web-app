@@ -1,0 +1,94 @@
+/* links.css */
+.linkbar {
+    background-color: #033E8C;
+    border: 10px solid #fff;
+    padding: 5px 5px;
+    display: flex;
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+    height: 50px;
+    /* Set the height as needed */
+}
+
+.linkbar h1 {
+    margin: 0;
+}
+
+.links-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    /* Add margin */
+}
+
+.column {
+    text-align: center;
+    /* Center-align content */
+}
+
+.full-image {
+    width: 97%;
+}
+
+.half-image {
+    width: 25%;
+    height: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.col-light-blue {
+    background-color: #6CA6D9;
+    /* Light blue background for col 2 */
+    height: 560px;
+    padding-top: 10px;
+}
+
+.contact-col-light-blue {
+    background-color: #6CA6D9;
+    /* Light blue background for col 2 */
+    height: 820px;
+    display: flex;
+    /* Add flexbox */
+    flex-direction: column;
+    /* justify-content: center; */
+    /* Center vertically */
+    align-items: center;
+    /* Center horizontally */
+    padding-top: 10px;
+}
+
+.col-dark-blue {
+    background-color: #3365A6;
+    /* Dark blue background for col 3 */
+    height: 560px;
+    padding-top: 10px;
+}
+
+.col-2 {
+    flex: 1;
+    /* Adjust the width of col-2 */
+}
+
+.col-4 {
+    flex: 2;
+    /* Adjust the width of col-4 */
+}
+
+.contact-col-light-blue div {
+    width: 70%;
+    margin-bottom: 20px;
+}
+
+.contact-col-light-blue .quote {
+    font-size: 1.2em;
+    /* Larger font size for the quote */
+}
+
+.contact-col-light-blue .author {
+    font-size: 1.1em;
+    /* Smaller font size for the book info */
+}
