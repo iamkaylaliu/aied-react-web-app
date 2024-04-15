@@ -1,52 +1,76 @@
-import React from 'react';
+// ExhibitPage.js
+import React, { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
+import Exhibit101 from './exhibit101';
+import Exhibit102 from './exhibit102';
+import Exhibit103 from './exhibit103';
 import "./exhibit.css";
-import newtoncartoon from "../images/newtoncartoon.jpeg";
 
 function Exhibit1() {
+    // Define state to manage active page
+    const [activePage, setActivePage] = useState(1);
+
+    // Total number of pages
+    const totalPages = 5; // Change this according to the number of exhibit pages
+
+    // Function to handle navigation to previous page
+    const goToPreviousPage = () => {
+        setActivePage(prevPage => Math.max(prevPage - 1, 1));
+    };
+
+    // Function to handle navigation to next page
+    const goToNextPage = () => {
+        setActivePage(prevPage => Math.min(prevPage + 1, totalPages));
+    };
+
     return (
         <div>
-            <div className="exhibit-linkbar">
-                <h1>01 | ISAAC NEWTON</h1>
-            </div>
             <div className="exhibit-links-container">
-                <div className="exhibit-column exhibit-col-4 exhibit-col-light-blue">
-                    <div className="exhibit-links-container">
-                        <div className="exhibit-column exhibit-col-2">
-                            <img src={newtoncartoon} className="exhibit-half-image" />
-                            <div className="label">
-                                <span className="label-text">Name:</span>
-                                <span className="value">Isaac Newton</span>
-                            </div>
-                            <div className="label">
-                                <span className="label-text">Age in 2024:</span>
-                                <span className="value">382 years</span>
-                            </div>
-                            <div className="label">
-                                <span className="label-text">Occupation:</span>
-                                <span className="value">Scientist, Mathematician, Physicist, Astronomer</span>
-                            </div>
-                            <div className="label">
-                                <span className="label-text">Fun Fact:</span>
-                                <span className="value">Isaac Newton's dad is also called Isaac Newton.</span>
-                            </div>
-                            <div className="label">
-                                <span className="label-text">Great-Great... Grandpa of:</span>
-                                <span className="value">
-                                    GPS, Modern Physics, Calculus, Optics, Engineering, Space Exploration, Scientific Method, Industrial Revolution
-                                </span>
-                            </div>
-                        </div>
-                        <div className="exhibit-column exhibit-col-2">
-                            <div className="text-content">
-                                <p>“Ah, splendid to see you all! Sir Isaac Newton reporting in. </p>
-                                <p>You know me as the guy who pondered falling apples and celestial ballets. But let’s talk practical physics.</p>
-                                <p>My laws of motion—those three gems—still rule the playground. When you kick a soccer ball, you’re channeling my wisdom.</p>
-                                <p>And gravity? It’s not just about planets—it’s in your skateboard tricks, your roller coasters, and even your morning cereal (thanks, milk!).</p>
-                                <p>Oh, and GPS navigation? Yep, that’s my gravitational pull guiding you to the nearest Pokémon Gym.</p>
-                                <p>Keep those equations handy! Remember, every action has an equal and opposite reaction.”</p>
-                            </div>
-                        </div>
+                {/* First column for navigation arrows */}
+                <div className="exhibit-column exhibit-col-2">
+                    {/* Conditionally render previous arrow */}
+                    {activePage > 1 &&
+                        <FontAwesomeIcon
+                            icon={faChevronLeft}
+                            className="arrow arrow-left"
+                            onClick={goToPreviousPage}
+                        />
+                    }
+                </div>
+                {/* Second column for exhibit content */}
+                <div className="exhibit-column exhibit-col-4">
+                    <div className="exhibit-linkbar">
+                        <h1>01 | ISAAC NEWTON</h1>
                     </div>
+                    <div className="exhibit-col-light-blue">
+                        {/* Render the active page based on state */}
+                        {activePage === 1 && <Exhibit101 />}
+                        {activePage === 2 && <Exhibit102 />}
+                        {activePage === 3 && <Exhibit103 />}
+                        {/* Add more Exhibit components for additional pages */}
+                    </div>
+                    {/* Render dots for navigation */}
+                    <div className="dots-container">
+                        {Array.from({ length: totalPages }, (_, index) => (
+                            <span
+                                key={index}
+                                className={`dot ${index + 1 === activePage ? 'active' : ''}`}
+                                onClick={() => setActivePage(index + 1)}
+                            ></span>
+                        ))}
+                    </div>
+                </div>
+                {/* Third column for navigation arrows */}
+                <div className="exhibit-column exhibit-col-2">
+                    {/* Conditionally render next arrow */}
+                    {activePage < totalPages &&
+                        <FontAwesomeIcon
+                            icon={faChevronRight}
+                            className="arrow arrow-right"
+                            onClick={goToNextPage}
+                        />
+                    }
                 </div>
             </div>
         </div>
