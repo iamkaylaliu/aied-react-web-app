@@ -13,19 +13,55 @@ function Chatbot() {
         setIsOpen(prevState => !prevState);
     };
 
-    const handleSendMessage = (message) => {
+    const generateFeynmanResponse = async (userMessage) => {
+        try {
+            const initialPrompt = "You are speaking as Richard Feynman, the renowned physicist.";
+            const prompt = `${initialPrompt}\nUser: ${userMessage}`;
+
+            const response = await fetch('https://api.openai.com/v1/completions', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': 'Bearer sk-proj-xqYVQzctkTTaGqfOJ4WZT3BlbkFJcyJRP84YbwiK9DGHrK4L'
+                },
+                body: JSON.stringify({
+                    model: 'gpt-3.5-turbo',
+                    prompt: prompt,
+                    max_tokens: 50
+                })
+            });
+
+            if (!response.ok) {
+                throw new Error('Failed to fetch response from the server');
+            }
+
+            const data = await response.json();
+            const generatedResponse = data.choices[0].text.trim();
+
+            return generatedResponse;
+        } catch (error) {
+            console.error('Error:', error);
+            return "An error occurred while generating the response.";
+        }
+    };
+
+    const handleSendMessage = async (message) => {
         setMessages(prevMessages => [...prevMessages, { text: message, sender: 'user' }]);
-        // Here you can implement logic to send the message to the chatbot API
+
+        try {
+            const botResponse = await generateFeynmanResponse(message);
+            setMessages(prevMessages => [...prevMessages, { text: botResponse, sender: 'bot' }]);
+        } catch (error) {
+            console.error('Error:', error);
+        }
     };
 
     return (
         <div>
-            {/* Chat icon */}
             <button className="toggle-chat" onClick={toggleChat}>
-                <FontAwesomeIcon icon={faRocketchat} style={{ fontSize: "2em", color: "#033E8C" }} />
+                <FontAwesomeIcon icon={faRocketchat} style={{ fontSize: "2.5em", color: "#033E8C" }} />
             </button>
 
-            {/* Popup container */}
             {isOpen && (
                 <div className="chatbot-popup">
                     <div className="chat-history-container">
@@ -41,8 +77,8 @@ function Chatbot() {
                         </div>
                     </div>
                     <div className="input-container">
-                        <input type="text" placeholder="Ask Feynman..." />
-                        <button className="send-button" onClick={() => handleSendMessage('Hello!')}>
+                        <input type="text" placeholder="Ask Feynman!" onKeyPress={(e) => e.key === 'Enter' && handleSendMessage(e.target.value)} />
+                        <button className="send-button" onClick={() => handleSendMessage('')}>
                             <FontAwesomeIcon icon={faArrowUpFromBracket} style={{ color: "#fff" }} />
                         </button>
                     </div>

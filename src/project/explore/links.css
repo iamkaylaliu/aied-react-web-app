@@ -51,6 +51,8 @@
     background-color: #6CA6D9;
     /* Light blue background for col 2 */
     height: 820px;
+    width: 100%;
+    /* Adjust width as needed */
     display: flex;
     /* Add flexbox */
     flex-direction: column;
@@ -60,6 +62,7 @@
     /* Center horizontally */
     padding-top: 10px;
 }
+
 
 .col-dark-blue {
     background-color: #3365A6;
@@ -93,4 +96,116 @@
     font-size: 1.1em;
     /* Smaller font size for the book info */
     line-height: 1.5;
+}
+
+.col-light-blue h2 {
+    text-align: left;
+    /* Left-align the heading */
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+
+.col-light-blue p {
+    text-align: left;
+    /* Left-align the text */
+    line-height: 2.2;
+    /* Set line height to 1.2 */
+    margin-left: 50px;
+    font-size: 1.1em;
+    color: white;
+    /* Set text color to white */
+    text-decoration: none;
+}
+
+.col-light-blue p:hover {
+    text-decoration: none;
+    /* Remove underline on hover */
+}
+
+.col-light-blue a {
+    text-decoration: none;
+    /* Remove underline from links */
+}
+
+
+.col-dark-blue h2 {
+    text-align: left;
+    /* Left-align the heading */
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+
+.col-dark-blue p {
+    text-align: left;
+    /* Left-align the text */
+    line-height: 2.2;
+    /* Set line height to 1.2 */
+    margin-left: 40px;
+    font-size: 1.1em;
+    color: white;
+    /* Set text color to white */
+    text-decoration: none;
+}
+
+.col-dark-blue p:hover {
+    text-decoration: none;
+    /* Remove underline on hover */
+}
+
+.col-dark-blue a {
+    text-decoration: none;
+    /* Remove underline from links */
+}
+
+.label-input-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    text-align: left;
+}
+
+.label-input-container label {
+    margin-bottom: 5px;
+    text-align: left;
+    font-size: 1.1em;
+    width: 500px;
+    margin-left: 15px;
+}
+
+.label-input-container input,
+.label-input-container textarea {
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    width: 500px;
+    font-size: 1.1em;
+    /* Set font size to 1.2em for all input boxes */
+    outline: none;
+    border-radius: 5px;
+}
+
+.label-input-container textarea.message-textarea {
+    height: 200px;
+    /* Adjusted height for the message textarea */
+}
+
+.contact-info-container h3 {
+    margin: 10px;
+    font-size: 1.4em;
+}
+
+.contact-info-container {
+    margin: 10px;
+    margin-bottom: 30px;
+}
+
+.send-button {
+    background-color: #033E8C;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    /* Set initial border radius */
+    cursor: pointer;
+    font-size: 1.1em;
 }

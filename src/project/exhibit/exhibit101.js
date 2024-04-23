@@ -1,4 +1,3 @@
-// Exhibit1.js
 import React from 'react';
 import "./exhibit.css";
 import nt1 from "../images/nt1.jpeg";
