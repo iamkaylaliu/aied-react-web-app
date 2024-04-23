@@ -43,7 +43,7 @@
     align-items: center;
     padding: 10px;
     margin: 5px;
-    width: 97%;
+    width: 96%;
     /* Set width to 100% to fill the column */
     height: 38%;
     /* Set height to 100% to fill the column */
@@ -53,12 +53,13 @@
     color: white;
     text-align: center;
     margin: 10px;
-    font-size: 26px;
+    font-size: 27px;
 }
 
 .explore-link {
     color: white;
     text-decoration: none;
-    margin-top: 10px;
+    margin-top: 15px;
     font-weight: bold;
+    font-size: 17px;
 }
