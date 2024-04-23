@@ -96,3 +96,30 @@
     background-color: #002b5c;
     /* Darker blue on hover */
 }
+
+.message {
+    margin-bottom: 10px;
+    /* Add margin between messages */
+    text-align: left;
+    /* Align messages to the left */
+}
+
+.message-content {
+    display: flex;
+    flex-direction: column;
+    /* Display sender label and message text in a column */
+}
+
+.sender-label {
+    font-weight: bold;
+    /* Make sender labels bold */
+    margin-bottom: 3px;
+    /* Add margin between sender label and message text */
+}
+
+.message-text {
+    word-wrap: break-word;
+    /* Wrap long messages */
+    white-space: pre-wrap;
+    /* Preserve whitespace */
+}

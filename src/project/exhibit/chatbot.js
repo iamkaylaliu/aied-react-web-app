@@ -22,7 +22,7 @@ function Chatbot() {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
-                    'Authorization': 'Bearer sk-proj-xqYVQzctkTTaGqfOJ4WZT3BlbkFJcyJRP84YbwiK9DGHrK4L'
+                    'Authorization': 'Bearer sk-proj-8Tf3oCswiqR9PzaNnQaVT3BlbkFJin6fX4jLTLxtlqNLP1OU'
                 },
                 body: JSON.stringify({
                     model: 'gpt-3.5-turbo',
@@ -32,7 +32,7 @@ function Chatbot() {
             });
 
             if (!response.ok) {
-                throw new Error('Failed to fetch response from the server');
+                throw new Error('Hello!');
             }
 
             const data = await response.json();
@@ -41,9 +41,10 @@ function Chatbot() {
             return generatedResponse;
         } catch (error) {
             console.error('Error:', error);
-            return "An error occurred while generating the response.";
+            return "Apple, Laws, Insight.";
         }
     };
+
 
     const handleSendMessage = async (message) => {
         setMessages(prevMessages => [...prevMessages, { text: message, sender: 'user' }]);
@@ -53,6 +54,8 @@ function Chatbot() {
             setMessages(prevMessages => [...prevMessages, { text: botResponse, sender: 'bot' }]);
         } catch (error) {
             console.error('Error:', error);
+        } finally {
+            document.querySelector('input[type="text"]').value = '';
         }
     };
 
@@ -65,19 +68,30 @@ function Chatbot() {
             {isOpen && (
                 <div className="chatbot-popup">
                     <div className="chat-history-container">
-                        <div className="fixed-message">
-                            <strong>Feynman:</strong> Ladies and gentlemen, welcome to our journey through the cosmos! I’m Richard Feynman, the bongo-playing physicist. Buckle up, because we’re about to explore the quantum world.
+                        <div className="message">
+                            <div className="message-content">
+                                <span className="sender-label">Feynman:</span>
+                                <span className="message-text">Ladies and gentlemen, welcome to our journey through the cosmos! I’m Richard Feynman, the bongo-playing physicist. Buckle up, because we’re about to explore the quantum world.</span>
+                            </div>
                         </div>
                         <div className="chat-history">
                             {messages.map((msg, index) => (
                                 <div key={index} className={`message ${msg.sender}`}>
-                                    {msg.text}
+                                    <div className="message-content">
+                                        <span className="sender-label">{msg.sender === 'user' ? 'User:' : 'Feynman:'}</span>
+                                        <span className="message-text">{msg.text}</span>
+                                    </div>
                                 </div>
                             ))}
                         </div>
+
                     </div>
                     <div className="input-container">
-                        <input type="text" placeholder="Ask Feynman!" onKeyPress={(e) => e.key === 'Enter' && handleSendMessage(e.target.value)} />
+                        <input
+                            type="text"
+                            placeholder="Ask Feynman!"
+                            onKeyDown={(e) => e.key === 'Enter' && handleSendMessage(e.target.value)}
+                        />
                         <button className="send-button" onClick={() => handleSendMessage('')}>
                             <FontAwesomeIcon icon={faArrowUpFromBracket} style={{ color: "#fff" }} />
                         </button>
