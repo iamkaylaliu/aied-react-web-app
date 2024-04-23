@@ -22,7 +22,7 @@ function Chatbot() {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
-                    'Authorization': 'Bearer sk-proj-8Tf3oCswiqR9PzaNnQaVT3BlbkFJin6fX4jLTLxtlqNLP1OU'
+                    'Authorization': 'Bearer GPT_API_Key'
                 },
                 body: JSON.stringify({
                     model: 'gpt-3.5-turbo',
