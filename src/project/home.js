@@ -17,32 +17,33 @@ import { FiChevronRight } from 'react-icons/fi';
 
 function Home() {
     return (
-        <div class="home-container">
-            <div class="column col-3">
-                <img src={hedy2} class="full-image" />
-                <img src={einstein1} class="full-image" style={{ height: '45%' }} />
-                <img src={plank} class="full-image" />
+        <div className="home-container">
+            <div className="column col-3">
+                <img src={hedy2} className="full-image shrink-image5 img-fluid" alt="hedy2" />
+                <img src={einstein1} className="full-image shrink-image5 img-fluid" alt="einstein1" style={{ height: '47%' }} />
+                <img src={plank} className="full-image shrink-image5 img-fluid" alt="plank" />
             </div>
-            <div class="column col-6">
-                <img src={newton2} class="full-image" />
+            <div className="column col-6">
+                <img src={newton2} className="full-image img-fluid" alt="newton2" />
                 <div className="blue-overlay">
-                    <h2 className="white-text">EXPLORE THE HIDDEN SIDE OF PHYSICS</h2>
-                    <h2 className="white-text"><em>with your guide Feynman</em></h2>
-                    <h3></h3>
+                    <h2 className="white-text">EXPLORE</h2>
+                    <h2 className="white-text">THE HIDDEN</h2>
+                    <h2 className="white-text">SIDE OF</h2>
+                    <h2 className="white-text">PHYSICS</h2>
                     <Link to="/project/galleries" className="explore-link">
                         <span style={{ display: 'flex', alignItems: 'center' }}>
-                            START FROM HERE <FiChevronRight style={{ fontWeight: 'bold', marginLeft: '5px' }} />
+                            WITH YOUR GUIDE FEYNMAN<FiChevronRight style={{ fontWeight: 'bold', marginLeft: '5px' }} />
                         </span>
                     </Link>
                 </div>
-                <img src={feynman7} class="full-image" style={{ width: '50%', height: '27%', marginTop: '3px' }} />
-                <img src={hedy3} class="full-image" style={{ width: '47%', height: '27%' }} />
+                <img src={feynman7} className="full-image shrink-image1 img-fluid" alt="feynman7" style={{ width: '49%', height: '27%', marginTop: '3px' }} />
+                <img src={hedy3} className="full-image shrink-image1 img-fluid" alt="hedy3" style={{ width: '49%', height: '27%' }} />
             </div>
-            <div class="column col-3">
-                <img src={feynmanc} class="full-image" style={{ width: '35%' }} />
-                <img src={einsteinc} class="full-image" style={{ width: '59%' }} />
-                <img src={curie5} class="full-image" style={{ width: '97%', height: '48%' }} />
-                <img src={feynman8} class="full-image" style={{ width: '97%', height: '27%' }} />
+            <div className="column col-3">
+                <img src={feynmanc} className="full-image shrink-image2 img-fluid" alt="feynmanc" style={{ width: '35%', height: '20%' }} />
+                <img src={einsteinc} className="full-image shrink-image3 img-fluid" alt="einsteinc" style={{ width: '61%', height: '20%' }} />
+                <img src={curie5} className="full-image shrink-image5 img-fluid" alt="curie5" style={{ width: '97%', height: '48%' }} />
+                <img src={feynman8} className="full-image shrink-image4 img-fluid" alt="feynman8" style={{ width: '97%', height: '27%' }} />
             </div>
         </div>
     );

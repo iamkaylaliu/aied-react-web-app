@@ -1,7 +1,7 @@
 /* links.css */
 .linkbar {
     background-color: #033E8C;
-    border: 10px solid #fff;
+    border: 5px solid #fff;
     padding: 5px 5px;
     display: flex;
     justify-content: center;
@@ -14,6 +14,7 @@
 
 .linkbar h1 {
     margin: 0;
+    color: white;
 }
 
 .links-container {
@@ -22,6 +23,7 @@
     align-items: center;
     margin: 0;
     /* Add margin */
+    color: white;
 }
 
 .column {
@@ -34,10 +36,10 @@
 }
 
 .half-image {
-    width: 25%;
+    width: 20%;
     height: 100%;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .col-light-blue {
@@ -87,13 +89,13 @@
 }
 
 .contact-col-light-blue .quote {
-    font-size: 1.1em;
+    font-size: 1.15em;
     /* Larger font size for the quote */
     line-height: 1.5;
 }
 
 .contact-col-light-blue .author {
-    font-size: 1.1em;
+    font-size: 1.15em;
     /* Smaller font size for the book info */
     line-height: 1.5;
 }
@@ -101,17 +103,18 @@
 .col-light-blue h2 {
     text-align: left;
     /* Left-align the heading */
-    margin-left: 50px;
+    margin-left: 30px;
     margin-bottom: 20px;
+    color: white;
 }
 
 .col-light-blue p {
     text-align: left;
     /* Left-align the text */
-    line-height: 2.2;
+    line-height: 1.5;
     /* Set line height to 1.2 */
-    margin-left: 50px;
-    font-size: 1.1em;
+    margin-left: 30px;
+    font-size: 1.15em;
     color: white;
     /* Set text color to white */
     text-decoration: none;
@@ -131,17 +134,18 @@
 .col-dark-blue h2 {
     text-align: left;
     /* Left-align the heading */
-    margin-left: 40px;
+    margin-left: 25px;
     margin-bottom: 20px;
+    color: white;
 }
 
 .col-dark-blue p {
     text-align: left;
     /* Left-align the text */
-    line-height: 2.2;
+    line-height: 1.5;
     /* Set line height to 1.2 */
-    margin-left: 40px;
-    font-size: 1.1em;
+    margin-left: 25px;
+    font-size: 1.15em;
     color: white;
     /* Set text color to white */
     text-decoration: none;

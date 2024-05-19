@@ -1,7 +1,7 @@
 .navbar {
     background-color: #555;
     /* Grey background color */
-    border: 10px solid #fff;
+    border: 5px solid #fff;
     /* White border */
     padding: 5px 5px;
     /* Padding around the navigation bar */
@@ -57,7 +57,7 @@
 }
 
 .navbar-link {
-    margin-left: 40px;
+    margin-left: 25px;
     /* Add space between links */
     text-decoration: none;
     /* Remove underline from links */

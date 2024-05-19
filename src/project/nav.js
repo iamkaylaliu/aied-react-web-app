@@ -9,6 +9,7 @@ function Nav() {
     const links = [
         { to: "/project/home", label: "HOME" },
         { to: "/project/galleries", label: "GALLERIES" },
+        { to: "/project/events", label: "EVENTS" },
         { to: "/project/links", label: "LINKS" },
         { to: "/project/contributors", label: "CONTRIBUTORS" },
         { to: "/project/contact", label: "CONTACT" },

@@ -46,6 +46,15 @@
     margin-bottom: 50px;
 }
 
+.event-half-image {
+    width: 70%;
+    display: block;
+    /* Ensure image is block-level element for margin auto */
+    margin: auto;
+    /* Center the image horizontally */
+    margin-bottom: 0px;
+}
+
 .exhibit-col-light-blue {
     background-color: #6CA6D9;
     height: 560px;
@@ -84,6 +93,13 @@
     align-items: left;
     text-align: left;
     margin-left: 0;
+    margin-bottom: 50px;
+}
+
+.event-text-column {
+    align-items: left;
+    text-align: left;
+    margin-left: 40px !important;
     margin-bottom: 50px;
 }
 

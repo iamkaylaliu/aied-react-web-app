@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenAI Chat Frontend</title>
+</head>
+
+<body>
+    <h1>OpenAI Chat</h1>
+    <div id="messages"></div>
+    <input type="text" id="messageInput" placeholder="Type your message...">
+    <button onclick="sendMessage()">Send</button>
+
+    <script>
+        let conversationContext = ''; // Initialize conversation context
+
+        async function sendMessage() {
+            const message = document.getElementById('messageInput').value;
+
+            try {
+                const response = await fetch('http://localhost:4000/api/assistant/thread/message', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ thread_id: 'your_thread_id', content: message, context: conversationContext }), // Send context
+                });
+
+                if (!response.ok) {
+                    throw new Error('Failed to send message to backend');
+                }
+
+                const data = await response.json();
+                console.log('Message sent to backend:', data);
+
+                displayResponse(data.choices[0].message.content); // Display content
+
+                // Update conversation context
+                conversationContext = data.choices[0].message.context;
+            } catch (error) {
+                console.error('Error sending message to backend:', error);
+            }
+        }
+
+        function displayResponse(content) {
+            const messagesDiv = document.getElementById('messages');
+            const messageElement = document.createElement('p');
+            messageElement.textContent = content;
+            messagesDiv.appendChild(messageElement);
+        }
+    </script>
+</body>
+
+</html>

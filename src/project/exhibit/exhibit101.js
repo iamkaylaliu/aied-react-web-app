@@ -19,11 +19,11 @@ function Exhibit101() {
                         <span className="value">382 years</span>
                     </div>
                     <div className="label">
-                        <span className="label-text">Occupation:</span>
+                        <span className="label-text">Roles:</span>
                         <span className="value">Scientist, Mathematician, Physicist, Astronomer</span>
                     </div>
                     <div className="label">
-                        <span className="label-text">Fun Fact:</span>
+                        <span className="label-text">Fun Facts:</span>
                         <span className="value">
                             <ol>
                                 <li>Isaac Newton's dad is also called Isaac Newton.</li>
