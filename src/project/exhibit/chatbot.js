@@ -10,7 +10,7 @@ function Chatbot() {
     const [inputValue, setInputValue] = useState('');
     const [threadId] = useState('your_thread_id'); // Use a fixed thread_id for simplicity
 
-    const BASE_API_URL = process.env.REACT_APP_BASE_API_URL || 'http://localhost:4000';
+    const BASE_API_URL = process.env.REACT_APP_API_BASE || 'http://localhost:4000';
 
     const toggleChat = () => {
         setIsOpen(prevState => !prevState);
