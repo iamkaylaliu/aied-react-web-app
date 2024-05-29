@@ -29,7 +29,7 @@ function Home() {
                     <h2 className="white-text">EXPLORE</h2>
                     <h2 className="white-text">THE HIDDEN</h2>
                     <h2 className="white-text">SIDE OF</h2>
-                    <h2 className="white-text">PHYSICS</h2>
+                    <h2 className="white-text">SCIENCE</h2>
                     <Link to="/project/galleries" className="explore-link">
                         <span style={{ display: 'flex', alignItems: 'center' }}>
                             WITH YOUR GUIDE FEYNMAN<FiChevronRight style={{ fontWeight: 'bold', marginLeft: '5px' }} />

@@ -23,7 +23,7 @@ function Nav() {
             </div>
             <div className="navbar-title">
                 <h2>UNVEILING GENIUS</h2>
-                <h3>Virtual Physics Museum</h3>
+                <h3>Virtual Science Museum</h3>
             </div>
             <div className="navbar-links">
                 {links.map((link) => (

@@ -13,7 +13,7 @@ function Bottom() {
             <div className="col">
                 <div className="navbar-title">
                     <h2>UNVEILING GENIUS</h2>
-                    <h3>Virtual Physics Museum</h3>
+                    <h3>Virtual Science Museum</h3>
                 </div>
                 <p>This virtual museum is intended solely for internal educational use as part of a student project. Please respect its non-commercial nature and consider the context before sharing its contents.</p>
             </div>
