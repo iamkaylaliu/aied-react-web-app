@@ -24,6 +24,8 @@
     position: relative;
     /* Make the container relative */
     color: white;
+    overflow: hidden;
+    /* Hide overflow by default */
 }
 
 .exhibit-column {
@@ -50,6 +52,8 @@
     background-color: #6CA6D9;
     height: 560px;
     padding-top: 10px;
+    overflow-y: auto;
+    /* Enable vertical scrolling */
 }
 
 .exhibit-col-dark-blue {
@@ -183,4 +187,49 @@
 .dot.active {
     background-color: #333;
     /* Set active color to dark grey */
+}
+
+/* Media query for screens smaller than 1280px */
+@media (max-width: 1350px) {
+    .exhibit-links-container {
+        flex-direction: column;
+        align-items: center;
+        overflow-y: auto;
+        /* Enable vertical scrolling */
+    }
+
+    .exhibit-column {
+        width: 100%;
+        /* Ensure columns take full width */
+    }
+
+    .exhibit-half-image {
+        margin-bottom: 0px;
+        /* Reduce margin for smaller screens */
+    }
+
+    .exhibit-text-column {
+        text-align: center;
+        margin-left: 30px;
+        /* Center text and remove left margin */
+    }
+
+    .label-text,
+    .value {
+        width: 100%;
+        text-align: left;
+        display: block;
+        /* Display labels and values as block for better stacking */
+    }
+
+    .label-text {
+        margin-bottom: 5px;
+        margin-left: 50px;
+        /* Add space between label text and value */
+    }
+
+    .text-content {
+        margin-left: 0;
+        padding-left: 50px;
+    }
 }

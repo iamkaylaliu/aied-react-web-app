@@ -62,6 +62,12 @@ function Chatbot() {
             {isOpen && (
                 <div className="chatbot-popup">
                     <div className="chat-history-container">
+                        <div className="message initial-message">
+                            <div className="message-content">
+                                <span className="sender-label">Feynman:</span>
+                                <span className="message-text">Got a question? Just say 'hi' to start. It might take me a moment to respond, like 30 seconds or so. After that, smooth sailing!</span>
+                            </div>
+                        </div>
                         <div className="chat-history">
                             {messages.map((msg, index) => (
                                 <div key={index} className={`message ${msg.sender}`}>

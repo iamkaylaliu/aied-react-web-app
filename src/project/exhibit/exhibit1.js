@@ -7,13 +7,12 @@ import Exhibit102 from './exhibit102';
 import Exhibit103 from './exhibit103';
 import Exhibit104 from './exhibit104';
 import Exhibit105 from './exhibit105';
-import Exhibit106 from './exhibit106';
 import Chatbot from './chatbot'; // Import the Chatbot component
 import "./exhibit.css";
 
 function Exhibit1() {
     const [activePage, setActivePage] = useState(1);
-    const totalPages = 6;
+    const totalPages = 5;
 
     const goToPreviousPage = () => {
         setActivePage(prevPage => Math.max(prevPage - 1, 1));
@@ -45,7 +44,6 @@ function Exhibit1() {
                         {activePage === 3 && <Exhibit103 />}
                         {activePage === 4 && <Exhibit104 />}
                         {activePage === 5 && <Exhibit105 />}
-                        {activePage === 6 && <Exhibit106 />}
                     </div>
                     <div className="dots-container">
                         {Array.from({ length: totalPages }, (_, index) => (

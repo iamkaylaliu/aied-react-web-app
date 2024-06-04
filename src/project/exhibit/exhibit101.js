@@ -26,16 +26,16 @@ function Exhibit101() {
                         <span className="label-text">Fun Facts:</span>
                         <span className="value">
                             <ol>
-                                <li>Isaac Newton's dad is also called Isaac Newton.</li>
-                                <li>Newton's birth year matches Galileo's death year: 1642.</li>
-                                <li>His mom initially wanted him to be a farmer.</li>
+                                <li>Formulated the laws of motion and universal gravitation.</li>
+                                <li>Developed calculus independently of Leibniz.</li>
+                                <li>Made significant contributions to optics, including the study of white light and color.</li>
                             </ol>
                         </span>
                     </div>
                     <div className="label">
-                        <span className="label-text">Great-Great... Grandpa of:</span>
+                        <span className="label-text">Great-Great... Influence on:</span>
                         <span className="value">
-                            GPS, Modern Physics, Calculus, Optics, Engineering, Space Exploration, Scientific Method, Industrial Revolution
+                            Modern Physics, Calculus, Classical Mechanics, Optics, Space Exploration, Scientific Method, Industrial Revolution
                         </span>
                     </div>
                 </div>

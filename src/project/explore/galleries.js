@@ -1,10 +1,9 @@
 import { Link } from "react-router-dom";
 import "./links.css";
-import maxwell3 from "../images/maxwell3.png";
-import maxwell6 from "../images/maxwell6.png";
+import ada1 from "../images/ada1.png";
 import newton7 from "../images/newton7.png";
-import curie8 from "../images/curie8.png";
 import einstein9 from "../images/einstein9.png";
+import wu1 from "../images/wu1.png";
 import hedy7 from "../images/hedy7.png";
 import feynman9 from "../images/feynman9.png";
 
@@ -19,15 +18,25 @@ function Galleries() {
                     <Link to="../exhibit/exhibit1">
                         <img src={newton7} className="full-image" />
                     </Link>
-                    <img src={einstein9} className="full-image" />
+                    <Link to="../exhibit/exhibit4">
+                        <img src={wu1} className="full-image" />
+                    </Link>
                 </div>
                 <div className="column col-2">
-                    <img src={maxwell6} className="full-image" />
-                    <img src={hedy7} className="full-image" />
+                    <Link to="../exhibit/exhibit2">
+                        <img src={ada1} className="full-image" />
+                    </Link>
+                    <Link to="../exhibit/exhibit5">
+                        <img src={hedy7} className="full-image" />
+                    </Link>
                 </div>
                 <div className="column col-2">
-                    <img src={curie8} className="full-image" />
-                    <img src={feynman9} className="full-image" />
+                    <Link to="../exhibit/exhibit3">
+                        <img src={einstein9} className="full-image" />
+                    </Link>
+                    <Link to="../exhibit/exhibit6">
+                        <img src={feynman9} className="full-image" />
+                    </Link>
                 </div>
             </div>
         </div>

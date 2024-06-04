@@ -32,7 +32,7 @@ function Event1() {
                 </div>
                 <div className="exhibit-column exhibit-col-4">
                     <div className="exhibit-linkbar">
-                        <h1>01 | Newton's Law of Gravity vs. General Relativity</h1>
+                        <h1>01 | Newton vs. Einstein</h1>
                     </div>
                     <div className="exhibit-col-light-blue">
                         {activePage === 1 && <Event101 />}

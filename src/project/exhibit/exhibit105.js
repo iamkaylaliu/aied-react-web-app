@@ -2,7 +2,7 @@
 import React from 'react';
 import "./exhibit.css";
 
-function Exhibit103() {
+function Exhibit105() {
     return (
         <div className="exhibit-column exhibit-col-light-blue">
             {/* <div className="exhibit-links-container">
@@ -11,7 +11,7 @@ function Exhibit103() {
                 <iframe
                     width="90%"
                     height="90%"
-                    src="https://www.youtube.com/embed/JGO_zDWmkvk"
+                    src="https://www.youtube.com/embed/D89ngRr4uZg"
                     title="YouTube video player"
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -23,4 +23,4 @@ function Exhibit103() {
     );
 }
 
-export default Exhibit103;
+export default Exhibit105;

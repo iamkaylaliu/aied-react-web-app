@@ -1,8 +1,8 @@
 /* Chatbot.css */
 .chatbot-popup {
     position: absolute;
-    bottom: 0px;
-    right: 260px;
+    bottom: 5px;
+    right: 285px;
     background-color: #F2F2EB;
     /* border: 1px solid #ccc; */
     border-radius: 10px;
@@ -12,7 +12,7 @@
     transition: transform 0.3s ease;
     transform: translateX(100%);
     color: black;
-    width: 230px;
+    width: 250px;
     max-height: 300px;
     /* Limit maximum height */
     overflow-y: auto;
@@ -29,9 +29,9 @@
 .toggle-chat {
     position: fixed;
     /* Position fixed for viewport-relative positioning */
-    bottom: 560px;
+    bottom: 500px;
     /* Adjust as needed */
-    right: 160px;
+    right: 80px;
     /* Adjust as needed */
     z-index: 1000;
     /* Ensure the icon is above other elements */
