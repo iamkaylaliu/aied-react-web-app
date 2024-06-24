@@ -1,12 +1,8 @@
 import { Link } from "react-router-dom";
 import "./links.css";
 import ntvs from "../images/ntvs.jpeg";
-import ntft from "../images/ntft.jpeg";
+import all from "../images/all.jpeg";
 import adaft from "../images/adaft.jpeg";
-import curie8 from "../images/curie8.png";
-import einstein9 from "../images/einstein9.png";
-import hedy7 from "../images/hedy7.png";
-import feynman9 from "../images/feynman9.png";
 
 function Events() {
     return (
@@ -22,11 +18,15 @@ function Events() {
                     {/* <img src={einstein9} className="full-image" /> */}
                 </div>
                 <div className="column col-2">
-                    <img src={adaft} className="full-image" />
+                    <Link to="../event/event2">
+                        <img src={adaft} className="full-image" />
+                    </Link>
                     {/* <img src={hedy7} className="full-image" /> */}
                 </div>
                 <div className="column col-2">
-                    <img src={ntft} className="full-image" />
+                    <Link to="../event/event3">
+                        <img src={all} className="full-image" />
+                    </Link>
                     {/* <img src={feynman9} className="full-image" /> */}
                 </div>
             </div>

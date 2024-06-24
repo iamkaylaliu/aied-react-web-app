@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
-import Event101 from './event101';
-import Event102 from './event102';
-import Event103 from './event103';
-import Event104 from './event104';
-import Event105 from './event105';
+import Event201 from './event201';
+import Event202 from './event202';
+import Event203 from './event203';
+import Event204 from './event204';
+import Event205 from './event205';
 import "./exhibit.css";
 
-function Event1() {
+function Event2() {
     const [activePage, setActivePage] = useState(1);
     const totalPages = 5;
 
@@ -34,14 +34,14 @@ function Event1() {
                 </div>
                 <div className="exhibit-column exhibit-col-4">
                     <div className="exhibit-linkbar">
-                        <h1>The Gravity Showdown: Newton vs. Einstein</h1>
+                        <h1>Penal Discussion: Women of No Importance?</h1>
                     </div>
                     <div className="exhibit-col-light-blue">
-                        {activePage === 1 && <Event101 />}
-                        {activePage === 2 && <Event102 />}
-                        {activePage === 3 && <Event103 />}
-                        {activePage === 4 && <Event104 />}
-                        {activePage === 5 && <Event105 />}
+                        {activePage === 1 && <Event201 />}
+                        {activePage === 2 && <Event202 />}
+                        {activePage === 3 && <Event203 />}
+                        {activePage === 4 && <Event204 />}
+                        {activePage === 5 && <Event205 />}
                     </div>
                     <div className="dots-container">
                         {Array.from({ length: totalPages }, (_, index) => (
@@ -67,4 +67,4 @@ function Event1() {
     );
 }
 
-export default Event1;
+export default Event2;

@@ -15,6 +15,8 @@ import Exhibit4 from "./exhibit/exhibit4";
 import Exhibit5 from "./exhibit/exhibit5";
 import Exhibit6 from "./exhibit/exhibit6";
 import Event1 from "./event/event1";
+import Event2 from "./event/event2";
+import Event3 from "./event/event3";
 
 function Project() {
     return (
@@ -35,6 +37,8 @@ function Project() {
                 <Route path="/exhibit/exhibit5" element={<Exhibit5 />} />
                 <Route path="/exhibit/exhibit6" element={<Exhibit6 />} />
                 <Route path="/event/event1" element={<Event1 />} />
+                <Route path="/event/event2" element={<Event2 />} />
+                <Route path="/event/event3" element={<Event3 />} />
             </Routes>
             <Bottom />
         </>

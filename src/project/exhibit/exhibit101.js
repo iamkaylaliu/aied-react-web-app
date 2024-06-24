@@ -2,7 +2,7 @@ import React from 'react';
 import "./exhibit.css";
 import nt1 from "../images/nt1.jpeg";
 
-function Exhibit101() {
+function Event101() {
     return (
         <div className="exhibit-column exhibit-col-light-blue">
             <div className="exhibit-links-container">
@@ -44,4 +44,4 @@ function Exhibit101() {
     );
 }
 
-export default Exhibit101;
+export default Event101;

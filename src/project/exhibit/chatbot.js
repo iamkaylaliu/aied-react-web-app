@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faRocketchat } from '@fortawesome/free-brands-svg-icons';
 import { faArrowUpFromBracket } from '@fortawesome/free-solid-svg-icons';
 import './chatbot.css';
+import fmchatbot from "../images/fmchatbot.png";
 
 function Chatbot() {
     const [isOpen, setIsOpen] = useState(false);
@@ -56,7 +57,8 @@ function Chatbot() {
     return (
         <div>
             <button className="toggle-chat" onClick={toggleChat}>
-                <FontAwesomeIcon icon={faRocketchat} style={{ fontSize: "2.5em", color: "#033E8C" }} />
+                {/* <FontAwesomeIcon icon={faRocketchat} style={{ fontSize: "2.5em", color: "#033E8C" }} /> */}
+                <img src={fmchatbot} alt="Chatbot Icon" style={{ width: '150px' }} />
             </button>
 
             {isOpen && (
@@ -65,7 +67,7 @@ function Chatbot() {
                         <div className="message initial-message">
                             <div className="message-content">
                                 <span className="sender-label">Feynman:</span>
-                                <span className="message-text">Got a question? Just say 'hi' to start. It might take me a moment to respond, like 30 seconds or so. After that, smooth sailing!</span>
+                                <span className="message-text">Hey there! I'm Richard Feynman, your guide today. Just say "hi" to get started!</span>
                             </div>
                         </div>
                         <div className="chat-history">
