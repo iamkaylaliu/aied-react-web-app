@@ -33,7 +33,7 @@ function Event1() {
                 </div>
                 <div className="exhibit-column exhibit-col-4">
                     <div className="exhibit-linkbar">
-                        <h1>The Gravity Showdown: Newton vs. Einstein</h1>
+                        <h1>The Gravity Debate: Newton vs. Einstein</h1>
                     </div>
                     <div className="exhibit-col-light-blue">
                         {activePage === 1 && <Event101 />}

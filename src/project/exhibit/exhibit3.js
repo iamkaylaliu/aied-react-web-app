@@ -64,7 +64,7 @@ function Exhibit3() {
                         />
                     }
                     {/* Integrate the Chatbot component here */}
-                    <Chatbot />
+                    <Chatbot threadId="exhibit3" exhibit="Albert Einstein" />
                 </div>
             </div>
         </div>

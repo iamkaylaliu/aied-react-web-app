@@ -64,7 +64,7 @@ function Exhibit5() {
                         />
                     }
                     {/* Integrate the Chatbot component here */}
-                    <Chatbot />
+                    <Chatbot threadId="exhibit5" exhibit="Hedy Lamarr" />
                 </div>
             </div>
         </div>
