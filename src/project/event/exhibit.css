@@ -24,6 +24,7 @@
     position: relative;
     /* Make the container relative */
     color: white;
+    overflow: auto;
 }
 
 .exhibit-column {
@@ -133,6 +134,35 @@
     margin-top: 10px;
     font-size: 1.2em;
     text-align: center;
+}
+
+.event-text-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* horizontally */
+    align-items: top;
+    /* vertically */
+    width: 80%;
+    line-height: 1.5;
+    margin: 10px auto;
+    font-size: 1.2em;
+    text-align: left;
+}
+
+.event-text-content p {
+    margin: 0 10px;
+}
+
+.text-image {
+    width: 120px;
+    height: 90px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+.text-message {
+    flex: 1;
 }
 
 .navigation-arrows {

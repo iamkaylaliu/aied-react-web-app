@@ -24,8 +24,7 @@
     position: relative;
     /* Make the container relative */
     color: white;
-    overflow: hidden;
-    /* Hide overflow by default */
+    overflow: auto;
 }
 
 .exhibit-column {
