@@ -4,11 +4,10 @@ import { faArrowUpFromBracket } from '@fortawesome/free-solid-svg-icons';
 import './chatbot.css';
 import fmchatbot from "../images/fmchatbot.png";
 
-function Chatbot() {
+function Chatbot({ threadId, exhibit }) { // Accept exhibit prop
     const [isOpen, setIsOpen] = useState(false);
     const [messages, setMessages] = useState([]);
     const [inputValue, setInputValue] = useState('');
-    const [threadId] = useState('your_thread_id'); // Use a fixed thread_id for simplicity
 
     const BASE_API_URL = process.env.REACT_APP_API_BASE || 'http://localhost:4000';
 
@@ -25,7 +24,7 @@ function Chatbot() {
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                body: JSON.stringify({ thread_id: threadId, content: message }),
+                body: JSON.stringify({ thread_id: threadId, content: message, exhibit }), // Include exhibit
             });
 
             if (!response.ok) {
@@ -56,7 +55,6 @@ function Chatbot() {
     return (
         <div>
             <button className="toggle-chat" onClick={toggleChat}>
-                {/* <FontAwesomeIcon icon={faRocketchat} style={{ fontSize: "2.5em", color: "#033E8C" }} /> */}
                 <img src={fmchatbot} alt="Chatbot Icon" style={{ width: '150px' }} />
             </button>
 

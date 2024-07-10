@@ -3,23 +3,17 @@
     position: absolute;
     bottom: 5px;
     right: 285px;
-    background-color: #F2F2EB;
-    /* border: 1px solid #ccc; */
-    border-radius: 10px;
-    padding: 10px;
+    background-color: #0D0C0C;
+    border-radius: 15px;
+    padding: 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     z-index: 999;
     transition: transform 0.3s ease;
     transform: translateX(100%);
     color: black;
     width: 250px;
-    max-height: 300px;
-    /* Limit maximum height */
+    max-height: 350px;
     overflow-y: auto;
-}
-
-.chat-history-container {
-    flex: 1;
 }
 
 .chatbot-popup.open {
@@ -28,98 +22,171 @@
 
 .toggle-chat {
     position: fixed;
-    /* Position fixed for viewport-relative positioning */
     bottom: 500px;
-    /* Adjust as needed */
     right: 130px;
-    /* Adjust as needed */
     z-index: 1000;
-    /* Ensure the icon is above other elements */
-    color: #033E8C;
     border: none;
     border-radius: 50%;
     width: 40px;
     height: 40px;
     cursor: pointer;
     background-color: transparent;
-    font-size: 20px;
 }
-
-
 
 .toggle-chat:focus {
     outline: none;
 }
 
-.chat-container {
+/* .chat-header {
+    background-color: rgba(70, 70, 70, 0.8);
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    height: 40px;
+} */
+
+.chat-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1a1919;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    height: 45px;
+    /* Adjust header height as needed */
+}
+
+.avatar {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    /* Align items to the bottom */
-    height: 100%;
-}
-
-.fixed-message {
-    margin-bottom: 10px;
-    /* text-align: left; */
-}
-
-.input-container {
-    display: flex;
     align-items: center;
-    padding-top: 10px;
 }
 
-.input-container input[type="text"] {
+.avatar-circle {
+    width: 40px;
+    /* Adjust circle size */
+    height: 40px;
+    background-color: #033e8c;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.avatar-label {
+    margin-top: 3px;
+    margin-bottom: 5px;
+    font-size: 12px;
+}
+
+.chat-history-container {
+    display: flex;
+    flex-direction: column;
     flex: 1;
-    height: 30px;
-    border-radius: 10px;
-    margin-right: 5px;
-    border: 1px solid #033E8C;
-    /* Change border color to blue */
+    overflow-y: auto;
 }
 
-.send-button {
-    background-color: #033E8C;
-    /* Blue color */
-    color: #fff;
-    /* White text color */
-    border: none;
-    border-radius: 5px;
-    padding: 8px 8px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    width: 15%;
-}
-
-.send-button:hover {
-    background-color: #002b5c;
-    /* Darker blue on hover */
+.chat-history {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin-top: 3px;
 }
 
 .message {
     margin-bottom: 10px;
-    /* Add margin between messages */
+    max-width: 70%;
+    padding: 8px 12px;
+    border-radius: 15px;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+}
+
+.message.user {
+    align-self: flex-end;
+    background-color: #007AFF;
+    color: #fff;
+    text-align: right;
+}
+
+.message.bot {
+    align-self: flex-start;
+    background-color: rgba(70, 70, 70, 0.8);
+    color: #fff;
     text-align: left;
-    /* Align messages to the left */
 }
 
 .message-content {
     display: flex;
     flex-direction: column;
-    /* Display sender label and message text in a column */
 }
 
-.sender-label {
-    font-weight: bold;
-    /* Make sender labels bold */
-    margin-bottom: 3px;
-    /* Add margin between sender label and message text */
+.input-container {
+    display: flex;
+    align-items: center;
+    padding: 10px 5px;
+    margin: 5px;
+    position: sticky;
+    bottom: 0;
+    background-color: #0D0C0C;
+    /* Match the background color to avoid overlap issues */
+    z-index: 10;
 }
 
-.message-text {
-    word-wrap: break-word;
-    /* Wrap long messages */
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    background-color: rgba(70, 70, 70, 0.8);
+    border-radius: 25px;
+    padding: 8px;
+}
+
+.input-container input[type="text"] {
+    flex: 1;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    outline: none;
     white-space: pre-wrap;
-    /* Preserve whitespace */
+    word-wrap: break-word;
+}
+
+.send-button {
+    background-color: #bfbfbf;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.send-button .fa-arrow-up {
+    font-size: 16px;
+    color: #0D0C0C;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.input-container input[type="text"]:focus+.send-button {
+    background-color: white;
+    /* Change arrow color when input is focused */
 }
