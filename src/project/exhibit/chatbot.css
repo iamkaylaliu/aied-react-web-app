@@ -2,7 +2,7 @@
 .chatbot-popup {
     position: absolute;
     bottom: 5px;
-    right: 285px;
+    right: 260px;
     background-color: #0D0C0C;
     border-radius: 15px;
     padding: 0;
@@ -12,7 +12,7 @@
     transform: translateX(100%);
     color: black;
     width: 250px;
-    max-height: 350px;
+    max-height: 360px;
     overflow-y: auto;
 }
 
@@ -37,19 +37,6 @@
     outline: none;
 }
 
-/* .chat-header {
-    background-color: rgba(70, 70, 70, 0.8);
-    color: #fff;
-    text-align: center;
-    padding: 5px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    position: sticky;
-    top: 0;
-    z-index: 10;
-    height: 40px;
-} */
-
 .chat-header {
     display: flex;
     justify-content: center;
@@ -64,7 +51,6 @@
     top: 0;
     z-index: 10;
     height: 45px;
-    /* Adjust header height as needed */
 }
 
 .avatar {
@@ -114,6 +100,7 @@
     border-radius: 15px;
     word-wrap: break-word;
     white-space: pre-wrap;
+    font-size: 0.9em;
 }
 
 .message.user {
