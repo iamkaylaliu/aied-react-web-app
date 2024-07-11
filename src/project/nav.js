@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import logo from "./logo.png";
@@ -15,6 +15,16 @@ function Nav() {
         { to: "/project/contact", label: "CONTACT" },
     ];
     const active = (path) => (pathname.includes(path) ? "active" : "");
+
+    const [sidebarOpen, setSidebarOpen] = useState(false);
+
+    const toggleSidebar = () => {
+        setSidebarOpen(!sidebarOpen);
+    };
+
+    const closeSidebar = () => {
+        setSidebarOpen(false);
+    };
 
     return (
         <nav className="navbar">
@@ -36,9 +46,28 @@ function Nav() {
                     </Link>
                 ))}
             </div>
+            <button className="sidebar-toggle" onClick={toggleSidebar}>
+                ☰
+            </button>
+            <div className={`sidebar ${sidebarOpen ? "open" : ""}`}>
+                <button className="close-sidebar" onClick={closeSidebar}>
+                    &times;
+                </button>
+                <div className="sidebar-links">
+                    {links.map((link) => (
+                        <Link
+                            key={link.to}
+                            to={link.to}
+                            className={`sidebar-link ${active(link.to)}`}
+                            onClick={closeSidebar}
+                        >
+                            {link.label}
+                        </Link>
+                    ))}
+                </div>
+            </div>
         </nav>
     );
 }
 
 export default Nav;
-

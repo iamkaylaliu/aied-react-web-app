@@ -1,47 +1,36 @@
+/* nav.css */
 .navbar {
     background-color: #555;
-    /* Grey background color */
     border: 5px solid #fff;
-    /* White border */
     padding: 5px 5px;
-    /* Padding around the navigation bar */
     display: flex;
-    /* Use flexbox layout */
     justify-content: space-between;
-    /* Align items at the start and end */
     align-items: center;
-    /* Center items vertically */
+    position: relative;
+    z-index: 1;
+    /* Ensure navbar is above most content */
 }
 
 .navbar-logo img {
     height: 80px;
-    /* Adjust logo height as needed */
     margin: 0;
     margin-right: 20px;
-    margin-left: 150px;
+    margin-left: 100px;
 }
 
 .navbar-title {
     display: flex;
-    /* Use flexbox layout */
     flex-direction: column;
-    /* Arrange items in a column */
     align-items: left;
-    /* Center items horizontally */
     margin-right: auto;
-    /* Push title to the left */
     color: #f2f2f2;
-    /* Light grey font color */
 }
 
 .navbar-title h2 {
     margin: 0;
-    /* Remove default margin */
     margin-top: 15px;
     font-size: 26px;
-    /* Adjust font size as needed */
     line-height: 1;
-    /* Adjust line height */
 }
 
 .navbar-title h3 {
@@ -52,21 +41,110 @@
 
 .navbar-links {
     display: flex;
-    /* Use flexbox layout */
-    margin-right: 150px;
+    margin-right: 50px;
 }
 
 .navbar-link {
     margin-left: 25px;
-    /* Add space between links */
     text-decoration: none;
-    /* Remove underline from links */
     color: #f2f2f2;
-    /* Light grey font color */
-    /* White font color */
 }
 
 .navbar-link.active {
     color: #fff;
-    /* Active link color */
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .navbar-links {
+        margin-right: 10px;
+    }
+
+    .navbar-logo img {
+        margin-left: 50px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .navbar-links {
+        display: none;
+    }
+
+    .sidebar-toggle {
+        display: block;
+        background: none;
+        border: none;
+        color: #f2f2f2;
+        font-size: 24px;
+        cursor: pointer;
+        z-index: 2;
+        /* Ensure the toggle is above most content */
+        margin-right: 10px;
+        font-size: 35px;
+    }
+
+    .sidebar {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        /* Change to fixed to ensure it covers the entire viewport */
+        top: 0;
+        right: -250px;
+        /* Initially hidden */
+        width: 250px;
+        height: 100%;
+        background-color: #333;
+        /* Sidebar background color */
+        border-left: 5px solid #fff;
+        transition: right 0.3s ease;
+        z-index: 3;
+        /* Ensure sidebar is above most content */
+    }
+
+    .sidebar.open {
+        right: 0;
+        /* When open, slide in from the right */
+    }
+
+    .sidebar-links {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .sidebar-link {
+        text-decoration: none;
+        color: #f2f2f2;
+        margin-bottom: 20px;
+    }
+
+    .sidebar-link.active {
+        color: #fff;
+    }
+
+    .close-sidebar {
+        align-self: flex-end;
+        background: none;
+        border: none;
+        color: #f2f2f2;
+        font-size: 24px;
+        cursor: pointer;
+        margin: 20px;
+    }
+}
+
+@media (min-width: 1001px) {
+
+    .sidebar,
+    .sidebar-toggle,
+    .close-sidebar,
+    .sidebar-links {
+        display: none;
+        /* Hide sidebar, close button, and sidebar links on larger screens */
+    }
+
+    .navbar-links {
+        display: flex;
+        /* Ensure navbar links are visible on larger screens */
+    }
 }

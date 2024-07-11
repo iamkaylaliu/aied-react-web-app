@@ -100,7 +100,7 @@
     border-radius: 15px;
     word-wrap: break-word;
     white-space: pre-wrap;
-    font-size: 0.9em;
+    font-size: 0.95em;
 }
 
 .message.user {
@@ -140,7 +140,7 @@
     flex: 1;
     background-color: rgba(70, 70, 70, 0.8);
     border-radius: 25px;
-    padding: 8px;
+    padding: 5px;
 }
 
 .input-container input[type="text"] {
@@ -151,6 +151,9 @@
     outline: none;
     white-space: pre-wrap;
     word-wrap: break-word;
+    padding: 5px;
+    min-height: 20px;
+    font-size: 0.95em;
 }
 
 .send-button {
@@ -160,8 +163,8 @@
     padding: 10px;
     cursor: pointer;
     transition: background-color 0.3s;
-    width: 30px;
-    height: 30px;
+    width: 26px;
+    height: 26px;
     display: flex;
     align-items: center;
     justify-content: center;
