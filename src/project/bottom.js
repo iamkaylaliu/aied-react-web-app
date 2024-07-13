@@ -1,13 +1,16 @@
 import React from "react";
 import "./bottom.css";
 import logo from "./logo.png";
+import { Link } from "react-router-dom";
 
 function Bottom() {
     return (
         <div className="bottom-container">
             <div className="col">
                 <div className="bottombar-logo">
-                    <img src={logo} alt="Logo" />
+                    <Link to="/project/home">
+                        <img src={logo} alt="Logo" />
+                    </Link>
                 </div>
             </div>
             <div className="col">

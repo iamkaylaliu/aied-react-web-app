@@ -42,63 +42,51 @@
     margin-right: 10px;
 }
 
-.col-light-blue {
+/* .col-light-blue {
     background-color: #6CA6D9;
-    /* Light blue background for col 2 */
     height: 560px;
     padding-top: 10px;
-}
+} */
 
-.contact-col-light-blue {
+/* .contact-col-light-blue {
     background-color: #6CA6D9;
-    /* Light blue background for col 2 */
     height: 820px;
     width: 100%;
-    /* Adjust width as needed */
     display: flex;
-    /* Add flexbox */
     flex-direction: column;
-    /* justify-content: center; */
-    /* Center vertically */
     align-items: center;
-    /* Center horizontally */
     padding-top: 10px;
-}
+} */
 
 
-.col-dark-blue {
+/* .col-dark-blue {
     background-color: #3365A6;
-    /* Dark blue background for col 3 */
     height: 560px;
     padding-top: 10px;
-}
+} */
 
 .col-2 {
     flex: 1;
-    /* Adjust the width of col-2 */
 }
 
 .col-4 {
     flex: 2;
-    /* Adjust the width of col-4 */
 }
 
-.contact-col-light-blue div {
+/* .contact-col-light-blue div {
     width: 70%;
     margin-bottom: 15px;
 }
 
 .contact-col-light-blue .quote {
     font-size: 1.15em;
-    /* Larger font size for the quote */
     line-height: 1.5;
 }
 
 .contact-col-light-blue .author {
     font-size: 1.15em;
-    /* Smaller font size for the book info */
     line-height: 1.5;
-}
+} */
 
 .col-light-blue h2 {
     text-align: left;
@@ -181,35 +169,24 @@
     border: none;
     padding: 10px;
     margin: 5px;
+    margin-bottom: 20px;
     width: 500px;
     font-size: 1.1em;
     /* Set font size to 1.2em for all input boxes */
     outline: none;
-    border-radius: 5px;
+    border-radius: 15px;
 }
 
 .label-input-container textarea.message-textarea {
     height: 200px;
-    /* Adjusted height for the message textarea */
 }
 
 .contact-info-container h3 {
     margin: 10px;
-    font-size: 1.4em;
+    font-size: 1.5em;
 }
 
 .contact-info-container {
     margin: 10px;
     margin-bottom: 30px;
-}
-
-.send-button {
-    background-color: #033E8C;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 10px;
-    /* Set initial border radius */
-    cursor: pointer;
-    font-size: 1.1em;
 }

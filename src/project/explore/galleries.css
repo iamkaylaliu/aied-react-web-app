@@ -1,0 +1,36 @@
+/* galleries.css */
+
+.links-container {
+    flex-wrap: wrap;
+}
+
+.full-image-galleries {
+    width: 98%;
+    margin-left: 5px;
+    margin-right: 0;
+    margin-top: 5px;
+
+}
+
+.column-galleries {
+    flex: 1 1 30%;
+}
+
+@media (max-width: 1200px) {
+    .column-galleries {
+        flex: 1 1 45%;
+    }
+}
+
+@media (max-width: 800px) {
+    .column-galleries {
+        flex: 1 1 90%;
+    }
+}
+
+@media (max-width: 600px) {
+    .column-galleries {
+        flex: 1 1 100%;
+        margin-right: 0;
+    }
+}

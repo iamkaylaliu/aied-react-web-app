@@ -1,13 +1,13 @@
-
 import "./links.css";
+import "./contributors.css";
 import newton4 from "../images/newton4.png";
 import newton5 from "../images/newton5.jpeg";
 import einstein8 from "../images/einstein8.png";
 import einstein3 from "../images/einstein3.jpg";
-
 import chatgpt from "../images/chatgpt.png";
 import freakonomics from "../images/feakonomics.jpeg";
 import aapm from "../images/aapm.png";
+import ohbot from "../images/ohbot.png";
 
 function Contributors() {
     return (
@@ -16,11 +16,11 @@ function Contributors() {
                 <h1>CONTRIBUTORS</h1>
             </div>
             <div className="links-container">
-                <div className="column col-2">
-                    <img src={newton4} className="full-image" />
-                    <img src={newton5} className="full-image" />
+                <div className="column-contributors col-2-contributors">
+                    <img src={newton4} className="full-image-contributors" />
+                    <img src={newton5} className="full-image-contributors" />
                 </div>
-                <div className="column col-4 contact-col-light-blue">
+                <div className="column-contributors col-4-contributors contact-col-light-blue">
                     <h2><em>Featured Reviews</em></h2>
                     <div className="quote">"Very nice video. Very interesting project. Science taught by historical figures is quite inspiring to those who want to make great discoveries someday themselves." </div>
                     <div className="author"> — Jim Spohrer, Ph.D., Board of Directors, ISSIP & ServCollab; Senior Fellow, UIDP; Retired Industry Executive, Apple & IBM; Author of <em>Service in the AI Era</em></div>
@@ -31,19 +31,20 @@ function Contributors() {
                     <div className="quote">"That sounds fun." "It sounds cool."</div>
                     <div className="author"> — Jeremy Roschelle, Ph.D., Executive Director at Digital Promise; AI & Emerging Technologies for Education, Research and Policy</div>
                     <div></div>
-                    <h2><em>Inspirations</em></h2>
+                    <h2 style={{ marginTop: 0 }}><em>Inspirations</em></h2>
                     <div className="image-links">
                         <a href="https://chat.openai.com/"><img src={chatgpt} className="half-image" /></a>
                         <a href="https://museum.aapm.org/"><img src={aapm} className="half-image" /></a>
                         <a href="https://freakonomics.com/"><img src={freakonomics} className="half-image" /></a>
+                        <a href="https://www.ohbot.co.uk/"><img src={ohbot} className="half-image" /></a>
                     </div>
                 </div>
-                <div className="column col-2">
-                    <img src={einstein3} className="full-image" />
-                    <img src={einstein8} className="full-image" />
+                <div className="column-contributors col-2-contributors">
+                    <img src={einstein3} className="full-image-contributors" />
+                    <img src={einstein8} className="full-image-contributors" />
                 </div>
             </div>
-        </div>
+        </div >
     );
 }
 

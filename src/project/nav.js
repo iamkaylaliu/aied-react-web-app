@@ -29,7 +29,9 @@ function Nav() {
     return (
         <nav className="navbar">
             <div className="navbar-logo">
-                <img src={logo} alt="Logo" />
+                <Link to="/project/home">
+                    <img src={logo} alt="Logo" />
+                </Link>
             </div>
             <div className="navbar-title">
                 <h2>UNVEILING GENIUS</h2>

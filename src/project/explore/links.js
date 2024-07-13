@@ -1,4 +1,5 @@
 import "./links.css";
+import "./newlinks.css";
 import newton4 from "../images/newton4.png";
 import newton5 from "../images/newton5.jpeg";
 import einstein8 from "../images/einstein8.png";
@@ -11,11 +12,11 @@ function Links() {
                 <h1>LINKS</h1>
             </div>
             <div className="links-container">
-                <div className="column col-2">
-                    <img src={newton4} className="full-image" />
-                    <img src={newton5} className="full-image" />
+                <div className="column-newlinks col-2-newlinks">
+                    <img src={newton4} className="full-image-newlinks" />
+                    <img src={newton5} className="full-image-newlinks" />
                 </div>
-                <div className="column col-4 col-light-blue">
+                <div className="column-newlinks col-4-newlinks col-light-blue">
                     <h2><em>More Physics Collections</em></h2>
                     <a href="https://museum.aapm.org/"><p>AAPM Virtual Museum of Medical Physics</p></a>
                     <a href="https://www.aip.org/history-programs"><p>AIP History Programs</p></a>
@@ -26,7 +27,7 @@ function Links() {
                     <a href="https://www.aps.org/programs/honors/history/historicsites/index.cfm"><p>APS Historic Sites Initiative</p></a>
                     <a href="https://www.eps.org/page/distinction_sites"><p>EPS Historic Sites</p></a>
                 </div>
-                <div className="column col-4 col-dark-blue">
+                <div className="column-newlinks col-4-newlinks col-dark-blue">
                     <h2><em>Professional Societies</em></h2>
                     <a href="https://ui.adsabs.harvard.edu/"><p>NASA Astrophysics Data System (ADS)</p></a>
                     <a href="https://scientific-info.cern/search-and-read/online-resources/cern-document-server-cds"><p>CERN Document Server</p></a>
@@ -37,9 +38,9 @@ function Links() {
                     <a href="https://www.iop.org/"><p>Institute of Physics (IOP)</p></a>
                     <a href="https://www.aapt.org/"><p>American Association of Physics Teachers (AAPT)</p></a>
                 </div>
-                <div className="column col-2">
-                    <img src={einstein3} className="full-image" />
-                    <img src={einstein8} className="full-image" />
+                <div className="column-newlinks col-2-newlinks">
+                    <img src={einstein3} className="full-image-newlinks" />
+                    <img src={einstein8} className="full-image-newlinks" />
                 </div>
             </div>
         </div>
