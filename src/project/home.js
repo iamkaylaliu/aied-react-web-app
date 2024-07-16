@@ -6,12 +6,12 @@ import einstein1 from "./images/einstein1.jpeg";
 import hedy2 from "./images/hedy2.jpg";
 import hedy3 from "./images/hedy3.jpg";
 import curie5 from "./images/curie5.jpeg";
+import wu4 from "./images/wu4.png";
 import newton2 from "./images/newton2.jpg";
 import einsteinc from "./images/einsteinc.jpg";
 import feynmanc from "./images/feynmanc.jpg";
 import feynman7 from "./images/feynman7.jpg";
-import feynman8 from "./images/feynman8.jpg";
-import plank from "./images/plank.jpeg";
+import ada4 from "./images/ada4.png";
 
 import { FiChevronRight } from 'react-icons/fi';
 
@@ -21,7 +21,7 @@ function Home() {
             <div className="column col-3">
                 <img src={hedy2} className="full-image shrink-image5 img-fluid" alt="hedy2" />
                 <img src={einstein1} className="full-image shrink-image5 img-fluid" alt="einstein1" style={{ height: '47%' }} />
-                <img src={plank} className="full-image shrink-image5 img-fluid" alt="plank" />
+                <img src={wu4} className="full-image shrink-image5 img-fluid" alt="wu5" />
             </div>
             <div className="column col-6">
                 <img src={newton2} className="full-image img-fluid" alt="newton2" />
@@ -43,7 +43,7 @@ function Home() {
                 <img src={feynmanc} className="full-image shrink-image2 img-fluid" alt="feynmanc" style={{ width: '35%', height: '20%' }} />
                 <img src={einsteinc} className="full-image shrink-image3 img-fluid" alt="einsteinc" style={{ width: '61%', height: '20%' }} />
                 <img src={curie5} className="full-image shrink-image5 img-fluid" alt="curie5" style={{ width: '97%', height: '48%' }} />
-                <img src={feynman8} className="full-image shrink-image4 img-fluid" alt="feynman8" style={{ width: '97%', height: '27%' }} />
+                <img src={ada4} className="full-image shrink-image4 img-fluid" alt="ada4" style={{ width: '97%', height: '27%' }} />
             </div>
         </div>
     );

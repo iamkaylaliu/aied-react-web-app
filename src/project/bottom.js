@@ -18,13 +18,13 @@ function Bottom() {
                     <h2>UNVEILING GENIUS</h2>
                     <h3>Virtual Science Museum</h3>
                 </div>
-                <p>This virtual museum is intended solely for internal educational use as part of a student project. Please respect its non-commercial nature and consider the context before sharing its contents.</p>
+                <p>Welcome to our AI-powered virtual museum! Explore six historical scientists and chat with the Richard Feynman chatbot, all designed for learning and fun as part of a student project. Please respect the educational focus before sharing. Enjoy your visit!</p>
             </div>
             <div className="col">
                 <h3>ADDRESS</h3>
-                <p>address line 1</p>
-                <p>address line 2</p>
-                <p>address line 3</p>
+                <p>123 Future Avenue</p>
+                <p>Quantum City, Virtual Reality</p>
+                <p>Cosmos Central, AI Universe</p>
             </div>
             <div className="col">
                 <h3>FOLLOW US</h3>
