@@ -8,24 +8,13 @@ function Chatbot({ threadId, exhibit }) {
     const [isOpen, setIsOpen] = useState(false);
     const [messages, setMessages] = useState([]);
     const [inputValue, setInputValue] = useState('');
-    const [isScrolled, setIsScrolled] = useState(false);
 
     const BASE_API_URL = process.env.REACT_APP_API_BASE || 'http://localhost:4000';
 
     useEffect(() => {
         // Add initial bot message when component mounts
         addInitialBotMessage();
-        window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
     }, []);
-
-    const handleScroll = () => {
-        if (window.scrollY > 100) {
-            setIsScrolled(true);
-        } else {
-            setIsScrolled(false);
-        }
-    };
 
     const addInitialBotMessage = async () => {
         const initialMessage = "Hey there! I'm Richard Feynman, your guide today. Just say 'hi' to get started!";
@@ -54,6 +43,7 @@ function Chatbot({ threadId, exhibit }) {
 
             const data = await response.json();
             console.log('Message sent to backend:', data);
+
             displayResponse(data.choices[0].message.content);
         } catch (error) {
             console.error('Error sending message to backend:', error);
@@ -73,7 +63,7 @@ function Chatbot({ threadId, exhibit }) {
     };
 
     return (
-        <div className={`chatbot-container ${isScrolled ? 'scrolled' : ''}`}>
+        <div>
             <button className="toggle-chat" onClick={toggleChat}>
                 <img src={fmchatbot} alt="Chatbot Icon" style={{ width: '150px' }} />
             </button>

@@ -1,5 +1,5 @@
 import React from 'react';
-import "./exhibit.css";
+import "./event.css";
 import ada1 from "../images/ada1.png";
 import wu1 from "../images/wu1.png";
 import hedy7 from "../images/hedy7.png";
@@ -8,23 +8,23 @@ import feynman9 from "../images/feynman9.png";
 function Event202() {
     return (
         <div className="exhibit-column exhibit-col-light-blue">
-            <div className="exhibit-links-container">
+            <div className="event-links-container">
                 <div className="exhibit-column exhibit-col-1 exhibit-text-column">
                     <div className="event-text-content">
                         <img src={feynman9} alt="Feynman" className="text-image" />
-                        <p className="text-message">Thank you all for those introductions. The title of this panel, "Women of No Importance," is quite ironic given your significant contributions. How do you feel about the recognition of women in science historically?</p>
+                        <p className="text-message">Welcome, everyone, to our exciting panel discussion titled "Women of No Importance?" Today, we have three amazing women who have made huge contributions to science and technology: Ada Lovelace, Chien-Shiung Wu, and Hedy Lamarr. Let’s start with a brief introduction from each of our guests.</p>
                     </div>
                     <div className="event-text-content">
                         <img src={ada1} alt="Ada" className="text-image" />
-                        <p className="text-message">Historically, women’s contributions to science and technology have often been overlooked or attributed to their male counterparts. In my time, societal expectations limited women’s roles, but I was fortunate to have the support of my mother and mentors who encouraged my interest in mathematics and science.</p>
+                        <p className="text-message">Hi, everyone! I’m Ada Lovelace. You might know me as the first computer programmer. In the 1800s, I worked with Charles Babbage on an early mechanical computer. I wrote what’s considered the first computer program, even though computers as we know them didn’t exist yet.</p>
                     </div>
                     <div className="event-text-content">
                         <img src={wu1} alt="Wu" className="text-image" />
-                        <p className="text-message">I agree. Even though my work was critical to the field of physics, it was my male colleagues who received the Nobel Prize. Recognition is slowly improving, but there is still much progress to be made. Women in science often have to work harder to gain the same recognition as men.</p>
+                        <p className="text-message">Hello! I’m Chien-Shiung Wu, a physicist. In the 1950s, I did an experiment that changed how we understand certain particles in physics. My work helped prove that the laws of physics aren’t always the same for matter and antimatter, which was a big deal!</p>
                     </div>
                     <div className="event-text-content">
                         <img src={hedy7} alt="Hedy" className="text-image" />
-                        <p className="text-message">It’s true. While my inventions were crucial, they weren’t taken seriously at the time because I was seen primarily as an actress. It wasn’t until much later that my contributions to technology were recognized. It’s important to challenge stereotypes and ensure women receive the credit they deserve.</p>
+                        <p className="text-message">Hi! I’m Hedy Lamarr. While many know me as an actress from Hollywood’s Golden Age, I’m also an inventor. During World War II, I co-invented a frequency-hopping spread spectrum technology, which is a foundational technology for modern wireless communication, including Wi-Fi and Bluetooth.</p>
                     </div>
                 </div>
             </div>

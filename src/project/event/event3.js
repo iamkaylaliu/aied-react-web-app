@@ -4,11 +4,13 @@ import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons
 import Event301 from './event301';
 import Event302 from './event302';
 import Event303 from './event303';
-import "./exhibit.css";
+import Event304 from './event304';
+import Event305 from './event305';
+import "./event.css";
 
 function Event3() {
     const [activePage, setActivePage] = useState(1);
-    const totalPages = 3;
+    const totalPages = 5;
 
     const goToPreviousPage = () => {
         setActivePage(prevPage => Math.max(prevPage - 1, 1));
@@ -20,7 +22,7 @@ function Event3() {
 
     return (
         <div>
-            <div className="exhibit-links-container">
+            <div className="event-links-container">
                 <div className="exhibit-column exhibit-col-2">
                     {activePage > 1 &&
                         <FontAwesomeIcon
@@ -38,6 +40,8 @@ function Event3() {
                         {activePage === 1 && <Event301 />}
                         {activePage === 2 && <Event302 />}
                         {activePage === 3 && <Event303 />}
+                        {activePage === 4 && <Event304 />}
+                        {activePage === 5 && <Event305 />}
                     </div>
                     <div className="dots-container">
                         {Array.from({ length: totalPages }, (_, index) => (

@@ -1,37 +1,37 @@
 import React from 'react';
-import "./exhibit.css";
-import all from "../images/all.jpeg";
+import "./event.css";
+import wu1 from "../images/wu1.png";
+import hedy7 from "../images/hedy7.png";
+import feynman9 from "../images/feynman9.png";
 
 function Event303() {
     return (
         <div className="exhibit-column exhibit-col-light-blue">
-            <div className="exhibit-links-container">
+            <div className="event-links-container">
                 <div className="exhibit-column exhibit-col-1 exhibit-text-column">
                     <div className="event-text-content">
-                        <img src={all} alt="All" className="text-image" />
-                        <p className="text-message"><strong>Bridge:</strong><br />
-                            Together we stand, in science’s embrace,<br />
-                            Curiosity guiding each step we trace.<br />
-                            From theory to practice, hands-on we thrive,<br />
-                            In the quest for knowledge, we truly come alive.</p>
+                        <img src={wu1} alt="Wu" className="text-image" />
+                        <p className="text-message"><strong>Verse 3 (Wu):</strong><br />
+                            Particles small, mysteries deep,<br />
+                            My experiments unveiled secrets we keep.<br />
+                            From atoms' cores to quantum surprise,<br />
+                            Nature's puzzles, under scientific eyes.</p>
                     </div>
                     <div className="event-text-content">
-                        <img src={all} alt="All" className="text-image" />
-                        <p className="text-message"><strong>Final Chorus:</strong><br />
-                            Newton's gravity holds us tight,<br />
-                            Einstein's theories shine so bright.<br />
-                            Wu's particles dance unseen,<br />
-                            Lamarr's waves connect the scene.<br />
-                            Feynman's diagrams, paths unfold,<br />
-                            Lovelace's code, stories told.</p>
+                        <img src={hedy7} alt="Hedy" className="text-image" />
+                        <p className="text-message"><strong>Verse 4 (Lamarr):</strong><br />
+                            Actress and inventor, roles combined,<br />
+                            Frequency hopping, a technology refined.<br />
+                            From Hollywood screens to signals clear,<br />
+                            Communication's path, innovation dear.</p>
                     </div>
                     <div className="event-text-content">
-                        <img src={all} alt="All" className="text-image" />
-                        <p className="text-message"><strong>Outro:</strong><br />
-                            In the symphony of science, together we play,<br />
-                            Exploring the world in our own unique way.<br />
-                            From stars in the sky to technology's might,<br />
-                            In the journey of discovery, our future is bright.</p>
+                        <img src={feynman9} alt="Feynman" className="text-image" />
+                        <p className="text-message"><strong>Verse 5 (Feynman):</strong><br />
+                            With diagrams dance, particles' play,<br />
+                            Quantum realms where mysteries sway.<br />
+                            From electrons' paths to quantum might,<br />
+                            Nature's secrets revealed in light.</p>
                     </div>
                 </div>
             </div>

@@ -23,7 +23,7 @@ function Exhibit601() {
                         <span className="value">Physicist, Educator, Nobel Laureate</span>
                     </div>
                     <div className="label">
-                        <span className="label-text">Fun Facts:</span>
+                        <span className="label-text">Key Highlights:</span>
                         <span className="value">
                             <ol>
                                 <li>Richard Feynman won the Nobel Prize in Physics in 1965.</li>

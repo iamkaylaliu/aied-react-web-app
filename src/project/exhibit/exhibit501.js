@@ -23,7 +23,7 @@ function Exhibit501() {
                         <span className="value">Actress, Inventor, Engineer</span>
                     </div>
                     <div className="label">
-                        <span className="label-text">Fun Facts:</span>
+                        <span className="label-text">Key Highlights:</span>
                         <span className="value">
                             <ol>
                                 <li>Hedy Lamarr co-invented frequency-hopping spread spectrum technology.</li>

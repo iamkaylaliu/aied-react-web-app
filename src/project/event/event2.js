@@ -5,11 +5,12 @@ import Event201 from './event201';
 import Event202 from './event202';
 import Event203 from './event203';
 import Event204 from './event204';
-import "./exhibit.css";
+import Event205 from './event205';
+import "./event.css";
 
 function Event2() {
     const [activePage, setActivePage] = useState(1);
-    const totalPages = 4;
+    const totalPages = 5;
 
     const goToPreviousPage = () => {
         setActivePage(prevPage => Math.max(prevPage - 1, 1));
@@ -21,7 +22,7 @@ function Event2() {
 
     return (
         <div>
-            <div className="exhibit-links-container">
+            <div className="event-links-container">
                 <div className="exhibit-column exhibit-col-2">
                     {activePage > 1 &&
                         <FontAwesomeIcon
@@ -40,6 +41,7 @@ function Event2() {
                         {activePage === 2 && <Event202 />}
                         {activePage === 3 && <Event203 />}
                         {activePage === 4 && <Event204 />}
+                        {activePage === 5 && <Event205 />}
                     </div>
                     <div className="dots-container">
                         {Array.from({ length: totalPages }, (_, index) => (

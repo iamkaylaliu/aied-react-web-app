@@ -23,7 +23,7 @@ function Exhibit401() {
                         <span className="value">Experimental Physicist, Professor, Pioneer in Nuclear Physics</span>
                     </div>
                     <div className="label">
-                        <span className="label-text">Fun Facts:</span>
+                        <span className="label-text">Key Highlights:</span>
                         <span className="value">
                             <ol>
                                 <li>Chien-Shiung Wu worked on the Manhattan Project during World War II.</li>

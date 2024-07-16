@@ -23,7 +23,7 @@ function Exhibit201() {
                         <span className="value">Mathematician, Writer, Computer Programming Pioneer</span>
                     </div>
                     <div className="label">
-                        <span className="label-text">Fun Facts:</span>
+                        <span className="label-text">Key Highlights:</span>
                         <span className="value">
                             <ol>
                                 <li>Ada Lovelace was the daughter of the poet Lord Byron.</li>

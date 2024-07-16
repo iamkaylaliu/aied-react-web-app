@@ -20,11 +20,17 @@
     transform: translateX(0);
 }
 
-.toggle-chat {
+.chatbot-container.scrolled .toggle-chat {
     position: fixed;
-    bottom: 500px;
+    top: 15px;
+    right: 125px;
+}
+
+.toggle-chat {
+    position: absolute;
+    top: 50px;
     right: 130px;
-    z-index: 1000;
+    z-index: 999;
     border: none;
     border-radius: 50%;
     width: 40px;

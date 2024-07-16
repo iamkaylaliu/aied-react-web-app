@@ -91,7 +91,7 @@
 .col-light-blue h2 {
     text-align: left;
     /* Left-align the heading */
-    margin-left: 30px;
+    margin-left: 40px;
     margin-bottom: 20px;
     color: white;
 }
@@ -99,10 +99,9 @@
 .col-light-blue p {
     text-align: left;
     /* Left-align the text */
-    line-height: 1.5;
-    /* Set line height to 1.2 */
-    margin-left: 30px;
-    font-size: 1.15em;
+    line-height: 1;
+    margin-left: 40px;
+    font-size: 1.2em;
     color: white;
     /* Set text color to white */
     text-decoration: none;
@@ -122,7 +121,7 @@
 .col-dark-blue h2 {
     text-align: left;
     /* Left-align the heading */
-    margin-left: 25px;
+    margin-left: 50px;
     margin-bottom: 20px;
     color: white;
 }
@@ -130,10 +129,10 @@
 .col-dark-blue p {
     text-align: left;
     /* Left-align the text */
-    line-height: 1.5;
+    line-height: 1;
     /* Set line height to 1.2 */
-    margin-left: 25px;
-    font-size: 1.15em;
+    margin-left: 50px;
+    font-size: 1.2em;
     color: white;
     /* Set text color to white */
     text-decoration: none;

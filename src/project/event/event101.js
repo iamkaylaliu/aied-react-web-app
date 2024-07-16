@@ -1,27 +1,19 @@
 import React from 'react';
-import "./exhibit.css";
-import newton7 from "../images/newton7.png";
-import einstein9 from "../images/einstein9.png";
-import feynman9 from "../images/feynman9.png";
+import './event.css';
 
 function Event101() {
     return (
         <div className="exhibit-column exhibit-col-light-blue">
-            <div className="exhibit-links-container">
-                <div className="exhibit-column exhibit-col-1 exhibit-text-column">
-                    <div className="event-text-content">
-                        <img src={feynman9} alt="Feynman" className="text-image" />
-                        <p className="text-message">Welcome, everyone, to the exciting debate between two of the greatest scientists in history. On one side, we have Sir Isaac Newton, who will tell us about his law of gravity. On the other, we have Albert Einstein, who will explain his theory of general relativity. Let's start with their opening statements.</p>
-                    </div>
-                    <div className="event-text-content">
-                        <img src={newton7} alt="Newton" className="text-image" />
-                        <p className="text-message">Hello, everyone! My law of gravity is quite simple: every object in the universe pulls on every other object. The strength of this pull depends on how big the objects are and how far apart they are. This idea helped us understand why apples fall to the ground and why planets orbit the sun.</p>
-                    </div>
-                    <div className="event-text-content">
-                        <img src={einstein9} alt="Einstein" className="text-image" />
-                        <p className="text-message">Hi, everyone! While Newton's idea is great, I found something even more interesting. My theory of general relativity says that gravity isn't just a force but something even cooler: it’s the bending of space and time around massive objects like planets and stars. Imagine space as a stretchy sheet—when you put a heavy ball on it, the sheet bends, and smaller balls roll towards the heavy ball. That’s how gravity works!</p>
-                    </div>
-                </div>
+            <div className="exhibit-col-6">
+                <iframe
+                    width="90%"
+                    height="90%"
+                    src="https://drive.google.com/file/d/1VSyrfn36FlW_kD0pisj8K6BPhUTCUi_i/preview"
+                    title="Google Drive video"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                ></iframe>
             </div>
         </div>
     );

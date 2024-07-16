@@ -23,7 +23,7 @@ function Exhibit301() {
                         <span className="value">Physicist, Theoretical Physicist, Nobel Laureate</span>
                     </div>
                     <div className="label">
-                        <span className="label-text">Fun Facts:</span>
+                        <span className="label-text">Key Highlights:</span>
                         <span className="value">
                             <ol>
                                 <li>Einstein was awarded the Nobel Prize in Physics in 1921.</li>
