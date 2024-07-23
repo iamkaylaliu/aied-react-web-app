@@ -54,17 +54,17 @@
 }
 
 .contact-col-light-blue .quote {
-    font-size: 1.25em;
+    font-size: 1.2em;
     line-height: 1.5;
     text-align: left;
     margin-bottom: 5px;
 }
 
 .contact-col-light-blue .author {
-    font-size: 1.1em;
+    font-size: 1.05em;
     line-height: 1.5;
     text-align: right;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     margin-left: 15px;
     width: 65%;
 }

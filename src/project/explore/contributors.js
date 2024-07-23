@@ -22,6 +22,9 @@ function Contributors() {
                 </div>
                 <div className="column-contributors col-4-contributors contact-col-light-blue">
                     <h2><em>Featured Reviews</em></h2>
+                    <div className="quote">"My conversation with Feynman about Ada Lovelace was very impressive. Our discussion of computers and creativity was flawless." </div>
+                    <div className="author"> — Ken Kahn, Ph.D., Senior Researcher Retired, University of Oxford; Researcher in AI, ML, Agent-Based Modeling and End-User Programming; Author of <em>ToonTalk</em></div>
+                    <div></div>
                     <div className="quote">"Very nice video. Very interesting project. Science taught by historical figures is quite inspiring to those who want to make great discoveries someday themselves." </div>
                     <div className="author"> — Jim Spohrer, Ph.D., Board of Directors, ISSIP & ServCollab; Senior Fellow, UIDP; Retired Industry Executive, Apple & IBM; Author of <em>Service in the AI Era</em></div>
                     <div></div>
