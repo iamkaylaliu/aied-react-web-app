@@ -54,14 +54,26 @@ function Chatbot({ threadId, exhibit }) {
 
             const data = await response.json();
             console.log('Message sent to backend:', data);
-            displayResponse(data.choices[0].message.content);
+
+            // Display the response message and audio
+            displayResponse(data.choices[0].message.content, data.audio);
         } catch (error) {
             console.error('Error sending message to backend:', error);
         }
     };
 
-    const displayResponse = (content) => {
-        setMessages(prevMessages => [...prevMessages, { text: content, sender: 'bot' }]);
+    // Modify the displayResponse function to handle both text and audio
+    const displayResponse = (content, audioBase64) => {
+        setMessages(prevMessages => [
+            ...prevMessages,
+            { text: content, sender: 'bot', audio: audioBase64 }
+        ]);
+    };
+
+    // Audio playback function
+    const playAudio = (audioBase64) => {
+        const audio = new Audio(audioBase64);
+        audio.play();
     };
 
     const handleSendMessage = () => {
@@ -71,6 +83,14 @@ function Chatbot({ threadId, exhibit }) {
         sendMessage();
         setInputValue('');
     };
+
+    // Scroll to the bottom whenever messages change
+    useEffect(() => {
+        const chatHistory = document.querySelector('.chat-history');
+        if (chatHistory) {
+            chatHistory.scrollTop = chatHistory.scrollHeight;
+        }
+    }, [messages]);
 
     return (
         <div className={`chatbot-container ${isScrolled ? 'scrolled' : ''}`}>
@@ -92,6 +112,12 @@ function Chatbot({ threadId, exhibit }) {
                                 <div key={index} className={`message ${msg.sender}`}>
                                     <div className="message-content">
                                         <span className="message-text">{msg.text}</span>
+                                        {msg.audio && (
+                                            <audio controls>
+                                                <source src={msg.audio} type="audio/mp3" />
+                                                Your browser does not support the audio element.
+                                            </audio>
+                                        )}
                                     </div>
                                 </div>
                             ))}
