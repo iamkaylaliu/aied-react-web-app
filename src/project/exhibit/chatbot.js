@@ -19,11 +19,22 @@ function Chatbot({ threadId, exhibit }) {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
+    useEffect(() => {
+        scrollToBottom();
+    }, [messages]);
+
     const handleScroll = () => {
         if (window.scrollY > 100) {
             setIsScrolled(true);
         } else {
             setIsScrolled(false);
+        }
+    };
+
+    const scrollToBottom = () => {
+        const chatHistory = document.querySelector('.chat-history-container');
+        if (chatHistory) {
+            chatHistory.scrollTop = chatHistory.scrollHeight;
         }
     };
 
@@ -85,6 +96,9 @@ function Chatbot({ threadId, exhibit }) {
                             <div className="avatar-circle">RF</div>
                             <div className="avatar-label">Richard</div>
                         </div>
+                        <button className="close-button" onClick={toggleChat} aria-label="Close Chat">
+                            &times;
+                        </button>
                     </div>
                     <div className="chat-history-container">
                         <div className="chat-history">

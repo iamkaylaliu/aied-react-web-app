@@ -2,7 +2,7 @@
 .chatbot-popup {
     position: absolute;
     bottom: 5px;
-    right: 260px;
+    right: 355px;
     background-color: #0D0C0C;
     border-radius: 15px;
     padding: 0;
@@ -11,9 +11,13 @@
     transition: transform 0.3s ease;
     transform: translateX(100%);
     color: black;
-    width: 250px;
-    max-height: 360px;
+    width: 350px;
+    height: 600px;
     overflow-y: auto;
+    display: flex;
+    /* Ensures child flex containers work properly */
+    flex-direction: column;
+    /* Aligns header, chat history, and input */
 }
 
 .chatbot-popup.open {
@@ -33,8 +37,8 @@
     z-index: 999;
     border: none;
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     cursor: pointer;
     background-color: transparent;
 }
@@ -56,7 +60,7 @@
     position: sticky;
     top: 0;
     z-index: 10;
-    height: 45px;
+    height: 50px;
 }
 
 .avatar {
@@ -75,14 +79,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 18px;
+    font-size: 22px;
     margin-top: 5px;
 }
 
 .avatar-label {
     margin-top: 3px;
     margin-bottom: 5px;
-    font-size: 12px;
+    font-size: 16px;
 }
 
 .chat-history-container {
@@ -90,6 +94,8 @@
     flex-direction: column;
     flex: 1;
     overflow-y: auto;
+    padding: 10px;
+    margin-bottom: 60px;
 }
 
 .chat-history {
@@ -106,7 +112,7 @@
     border-radius: 15px;
     word-wrap: break-word;
     white-space: pre-wrap;
-    font-size: 0.95em;
+    font-size: 1em;
 }
 
 .message.user {
@@ -133,8 +139,11 @@
     align-items: center;
     padding: 10px 5px;
     margin: 5px;
-    position: sticky;
+    /* position: sticky; */
+    position: absolute;
     bottom: 0;
+    left: 0;
+    right: 0;
     background-color: #0D0C0C;
     /* Match the background color to avoid overlap issues */
     z-index: 10;
@@ -185,4 +194,16 @@
 .input-container input[type="text"]:focus+.send-button {
     background-color: white;
     /* Change arrow color when input is focused */
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    outline: none;
 }
