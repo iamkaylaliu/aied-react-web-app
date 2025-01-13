@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+# **Unveil Genius: AI Science Museum with Historical Figures - Frontend**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Unveil Genius** is an AI-powered science museum featuring historical figures, a Richard Feynman chatbot, and debates between Newton and Einstein, designed to engage middle and high school students. The project started as part of the **CS7180 CS/AI in Education** course at Northeastern University and was later extended into a fully functional website through a summer RAship and the **CS7980 Research Capstone** course. This repository contains the frontend of the application, built with React and JavaScript, and is hosted on Netlify.
 
-## Available Scripts
+To explore our website, visit: [Unveil Genius](https://unveilgenius.netlify.app)
 
-In the project directory, you can run:
+For the **backend repository**, visit: [Backend Repository](https://github.com/iamkaylaliu/aied-node-server-app)  
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### **Key Highlights**
+- A flexible template to apply AI in education across various subjects, such as:
+   - An AI Science Museum with historical scientists and a Feynman chatbot.
+   - An AI Literature Museum with historical authors and a Shakespeare chatbot.
+- A Project-Based Learning (PBL) experience for CS students to learn emerging AI/ML technologies and apply them to educational settings.
+- An engaging experience designed to spark middle and high school students' interest in STEAM, showing how knowledge evolves through debates and discussions.
+- Galleries featuring six iconic scientists: Isaac Newton, Ada Lovelace, Albert Einstein, Chien-Shiung Wu, Hedy Lamarr, and Richard Feynman, all brought to life using LLMs.
+- The Richard Feynman chatbot as a personal guide, powered by GPT-4o-mini.
+- Interactive events between scientists, enhanced with voice clones and TTS technology, including:
+   - A gravity debate between Newton and Einstein.
+   - A panel discussion with female scientists on the topic "Women of No Importance?"
+   - A science symphony, "All Together Now," performanced by all the scientists.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+### **Technologies Used**
+- **Frontend**: React, JavaScript, HTML, CSS
+- **Hosting**: [Netlify](https://www.netlify.com/)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### **How to Run Locally**
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/iamkaylaliu/aied-react-web-app.git
+   ```
+2. **Navigate to the project directory**:
+   ```bash
+   cd aied-react-web-app
+   ```
+3. **Install dependencies**:
+   ```bash
+   npm install
+   ```
+4. **Start the development server**:
+   ```bash
+   npm start
+   ```
+5. **Open your browser and visit**:
+   ```bash
+   http://localhost:3000
+   ```
+   
